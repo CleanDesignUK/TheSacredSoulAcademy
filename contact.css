@@ -1,0 +1,126 @@
+/* Contact Page Specific Styles */
+
+/* Parallax Background for Contact Section */
+.parallax-background-contact {
+    background-image: url('placeholder-contact-background.jpg'); /* Replace with your desired image */
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+  
+  /* Contact Form Styling */
+  .contact-form {
+    background: rgba(255, 255, 255, 0.7); /* Semi-transparent */
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form select {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #d291bc;
+    border-radius: 8px;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus,
+  .contact-form select:focus {
+    border-color: #a56ca6;
+    box-shadow: 0 0 5px rgba(210, 145, 188, 0.5);
+  }
+  
+  .contact-form .btn-outline-primary {
+    border-radius: 25px;
+    padding: 0.6rem 1.2rem;
+    transition: all 0.3s ease;
+  }
+  
+  .contact-form .btn-outline-primary:hover {
+    background-color: #d291bc;
+    color: #fff;
+  }
+  
+  /* FAQ Section Styling */
+  .faq-section {
+    background-color: #fdfdfd;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  
+  .faq-section .accordion-button {
+    background-color: #f9f6f2;
+    color: #4a4a4a;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .faq-section .accordion-button.collapsed {
+    background-color: #f9f6f2;
+    color: #4a4a4a;
+  }
+  
+  .faq-section .accordion-button:not(.collapsed) {
+    background-color: #d291bc;
+    color: #fff;
+  }
+  
+  .faq-section .accordion-body {
+    background-color: #fdfdfd;
+    color: #333;
+  }
+  
+  .faq-section .accordion-button:focus {
+    box-shadow: none;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .contact-form {
+      padding: 1.5rem;
+    }
+  
+    .faq-section h2 {
+      font-size: 1.75rem;
+    }
+  
+    .faq-section .accordion-button {
+      font-size: 1rem;
+    }
+  
+    .faq-section .accordion-body {
+      font-size: 0.95rem;
+    }
+  }
+  
+  /* Smooth Scrolling for Anchor Links */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Additional Enhancements */
+  .faq-section .accordion-item {
+    border: none;
+    margin-bottom: 1rem;
+  }
+  
+  .faq-section .accordion-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .faq-section .accordion-header {
+    padding: 0;
+  }
+  
+  .faq-section .accordion-body {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  

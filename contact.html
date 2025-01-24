@@ -5,34 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>The Sacred Soul Academy – Contact</title>
   
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Contact The Sacred Soul Academy for spiritual transformation and holistic healing services. Reach out for Reiki, Angelic Healing, Meditation Sessions, and more.">
+  <meta name="keywords" content="Reiki, Angelic Healing, Meditation, Spiritual Coaching, Chakra Cleansing, Crystal Healing, The Sacred Soul Academy, Holistic Healing, Spiritual Workshops, Intuitive Readings">
+  <meta name="author" content="The Sacred Soul Academy">
+  
+  <!-- Open Graph Meta Tags for Social Media -->
+  <meta property="og:title" content="Contact The Sacred Soul Academy">
+  <meta property="og:description" content="Reach out to The Sacred Soul Academy for your spiritual and holistic healing needs.">
+  <meta property="og:image" content="url_to_social_image.jpg">
+  <meta property="og:url" content="https://www.thesacredsoulacademy.com/contact.html">
+  <meta property="og:type" content="website">
+  
   <!-- Google Fonts & Bootstrap -->
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link 
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" 
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" 
     rel="stylesheet"
   />
   <link 
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
     rel="stylesheet"
   />
-  <script 
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
-  </script>
-
-  <style>
-    body {
-      font-family: 'Open Sans', sans-serif;
-      background-color: #fdfdfd;
-      color: #333;
-    }
-  </style>
+  
+  <!-- SweetAlert CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="contact.css" />
 </head>
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+  <nav class="navbar navbar-expand-lg navbar-light bg-solid fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="index.html">The Sacred Soul Academy</a>
+      <a class="navbar-brand font-great-vibes" href="index.html">The Sacred Soul Academy</a>
       <button class="navbar-toggler" 
               type="button" data-bs-toggle="collapse" 
               data-bs-target="#navbarNav" 
@@ -40,19 +48,19 @@
               aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav gap-3">
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="services.html">Services</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="events.html">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#faq">FAQs</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="contact.html">Contact</a>
@@ -63,65 +71,469 @@
   </nav>
 
   <!-- Contact Section -->
-  <section class="container py-5">
-    <h1 class="mb-4">Contact Us</h1>
-    <p class="lead">
-      Have questions or want to book a session? Fill out the form below or reach us directly.
-    </p>
+  <section id="contact" class="contact-section py-5 mt-5">
+    <div class="parallax-background-contact"></div>
+    <div class="container position-relative mt-5 pt-5">
+      <h2 class="text-center mb-5 font-playfair">Contact Us</h2>
+      <p class="lead text-center mb-4 font-open">
+        Have questions or want to book a session? Fill out the form below or reach us directly.
+      </p>
 
-    <div class="row">
-      <!-- Contact Form -->
-      <div class="col-md-6 mb-4">
-        <form>
-          <div class="mb-3">
-            <label for="name" class="form-label">Name*</label>
-            <input type="text" class="form-control" id="name" required />
-          </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Email*</label>
-            <input type="email" class="form-control" id="email" required />
-          </div>
-          <div class="mb-3">
-            <label for="message" class="form-label">Message*</label>
-            <textarea class="form-control" id="message" rows="5" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Send Message</button>
-          <p class="small mt-2">
-            <em>250 free submissions per month limit applies.</em>
+      <div class="row">
+        <!-- Contact Form -->
+        <div class="col-lg-6 mb-4">
+          <form id="web3-form" class="contact-form">
+            <input type="hidden" name="access_key" value="e4fd0955-cc88-463b-aa6b-2202c033a65a">
+            <input type="hidden" name="botcheck" class="hidden" style="display: none;">
+            
+            <div class="mb-3">
+              <label for="name" class="form-label">Name*</label>
+              <input type="text" class="form-control" id="name" name="name" required />
+            </div>
+            
+            <div class="mb-3">
+              <label for="email" class="form-label">Email*</label>
+              <input type="email" class="form-control" id="email" name="email" required />
+            </div>
+            
+            <div class="mb-3">
+              <label for="phone" class="form-label">Phone*</label>
+              <input type="tel" class="form-control" id="phone" name="phone" required placeholder="+44 7527 966409" />
+            </div>
+            
+            <div class="mb-3">
+              <label for="subject" class="form-label">Subject*</label>
+              <select class="form-select" id="subject" name="subject" required>
+                <option value="" disabled selected>Select a subject</option>
+                <option value="Card Readings">Card Readings</option>
+                <option value="Reiki Drum Treatment">Reiki Drum Treatment</option>
+                <option value="Intuitive Angel Card Reading Workshop">Intuitive Angel Card Reading Workshop</option>
+                <option value="Usui Reiki/Reiki Drum">Usui Reiki/Reiki Drum</option>
+                <option value="Usui Reiki Training">Usui Reiki Training</option>
+                <option value="Angelic Reiki">Angelic Reiki</option>
+                <option value="Crystal Healing">Crystal Healing</option>
+                <option value="Spiritual Coaching & Mentorship">Spiritual Coaching & Mentorship</option>
+                <option value="Chakra Balance/Cleanse">Chakra Balance/Cleanse</option>
+                <option value="Self Care Mentorship - The Soul Approach">Self Care Mentorship - The Soul Approach</option>
+                <option value="1-1 Meditation/Relaxation Sessions">1-1 Meditation/Relaxation Sessions</option>
+                <option value="Violet Flame Healing">Violet Flame Healing</option>
+                <option value="Intuitive Crystal Healing">Intuitive Crystal Healing</option>
+                <option value="Event Related Questions">Event Related Questions</option>
+              </select>
+            </div>
+            
+            <div class="mb-3">
+              <label for="message" class="form-label">Message*</label>
+              <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-outline-primary">Submit Form</button>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="col-lg-6 mb-4">
+          <h3 class="font-playfair mb-4">Get in Touch</h3>
+          <p class="font-open"><strong>Email:</strong> <a href="mailto:thesacredsoul@mail.com">thesacredsoul@mail.com</a></p>
+          <p class="font-open"><strong>Phone / WhatsApp:</strong> +44 7527 966409</p>
+          <p class="font-open">We aim to respond within 24-48 hours.</p>
+
+          <h4 class="mt-4 font-playfair">Privacy Statement</h4>
+          <p class="small text-muted font-open">
+            We respect your privacy and comply with GDPR regulations. Your personal information will only be used to respond to your inquiry and provide relevant services. By submitting this form, you consent to our data processing.
           </p>
-        </form>
+        </div>
       </div>
 
-      <!-- Contact Info -->
-      <div class="col-md-6">
-        <h3>Get in Touch</h3>
-        <p><strong>Email:</strong> <a href="mailto:thesacredsoul@mail.com">thesacredsoul@mail.com</a></p>
-        <p><strong>Phone / WhatsApp:</strong> +44 7527 966409</p>
-        <p>We aim to respond within 24-48 hours.</p>
+      <!-- FAQ Section -->
+      <div id="faq" class="faq-section py-5 p-2">
+        <h2 class="text-center mb-5 font-playfair">Frequently Asked Questions</h2>
+        <div class="accordion" id="faqAccordion">
+          <!-- FAQ 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeading1">
+              <button class="accordion-button collapsed font-open" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="false" aria-controls="faqCollapse1">
+                What is Usui Reiki?
+              </button>
+            </h2>
+            <div id="faqCollapse1" class="accordion-collapse collapse" aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
+              <div class="accordion-body font-open">
+                Usui Reiki is a form of energy healing that promotes relaxation, balance, and overall well-being by channeling universal life force energy.
+              </div>
+            </div>
+          </div>
+          
+          <!-- FAQ 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeading2">
+              <button class="accordion-button collapsed font-open" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                How do I prepare for a Reiki Drum Treatment?
+              </button>
+            </h2>
+            <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
+              <div class="accordion-body font-open">
+                Wear comfortable clothing and arrive a few minutes early to settle in. It’s also beneficial to have an open mind and be ready to relax.
+              </div>
+            </div>
+          </div>
+          
+          <!-- FAQ 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeading3">
+              <button class="accordion-button collapsed font-open" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                What can I expect during an Intuitive Angel Card Reading?
+              </button>
+            </h2>
+            <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
+              <div class="accordion-body font-open">
+                You will receive guidance and insights through angel cards, helping you gain clarity on personal issues, life paths, and spiritual growth.
+              </div>
+            </div>
+          </div>
 
-        <h4 class="mt-4">Privacy Statement</h4>
-        <p class="small text-muted">
-          We respect your privacy and comply with GDPR regulations. Your personal 
-          information will only be used to respond to your inquiry and provide relevant 
-          services. By submitting this form, you consent to our data processing.
-        </p>
+          <!-- FAQ 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeading4">
+              <button class="accordion-button collapsed font-open" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+                How long does a Usui Reiki session last?
+              </button>
+            </h2>
+            <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faqHeading4" data-bs-parent="#faqAccordion">
+              <div class="accordion-body font-open">
+                A typical Usui Reiki session lasts between 60 to 90 minutes, depending on your specific needs and preferences.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeading5">
+              <button class="accordion-button collapsed font-open" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse5" aria-expanded="false" aria-controls="faqCollapse5">
+                What should I wear to a meditation session?
+              </button>
+            </h2>
+            <div id="faqCollapse5" class="accordion-collapse collapse" aria-labelledby="faqHeading5" data-bs-parent="#faqAccordion">
+              <div class="accordion-body font-open">
+                Wear loose, comfortable clothing that allows you to relax fully. Avoid tight or restrictive garments to enhance your meditation experience.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeading6">
+              <button class="accordion-button collapsed font-open" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse6" aria-expanded="false" aria-controls="faqCollapse6">
+                Can I attend a workshop if I’m a beginner?
+              </button>
+            </h2>
+            <div id="faqCollapse6" class="accordion-collapse collapse" aria-labelledby="faqHeading6" data-bs-parent="#faqAccordion">
+              <div class="accordion-body font-open">
+                Absolutely! Our workshops are designed to cater to all levels, including beginners. We provide the necessary guidance to help you start your spiritual journey.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 7 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeading7">
+              <button class="accordion-button collapsed font-open" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse7" aria-expanded="false" aria-controls="faqCollapse7">
+                What is the difference between Usui Reiki and Angelic Reiki?
+              </button>
+            </h2>
+            <div id="faqCollapse7" class="accordion-collapse collapse" aria-labelledby="faqHeading7" data-bs-parent="#faqAccordion">
+              <div class="accordion-body font-open">
+                Usui Reiki focuses on channeling universal life force energy for healing, while Angelic Reiki incorporates angelic energies to enhance spiritual connection and emotional healing.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 8 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeading8">
+              <button class="accordion-button collapsed font-open" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse8" aria-expanded="false" aria-controls="faqCollapse8">
+                How do I book a session?
+              </button>
+            </h2>
+            <div id="faqCollapse8" class="accordion-collapse collapse" aria-labelledby="faqHeading8" data-bs-parent="#faqAccordion">
+              <div class="accordion-body font-open">
+                You can book a session by filling out the contact form on this page or by reaching out directly via email or phone. We will get back to you to schedule a convenient time.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 9 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeading9">
+              <button class="accordion-button collapsed font-open" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse9" aria-expanded="false" aria-controls="faqCollapse9">
+                What should I expect during a Crystal Healing session?
+              </button>
+            </h2>
+            <div id="faqCollapse9" class="accordion-collapse collapse" aria-labelledby="faqHeading9" data-bs-parent="#faqAccordion">
+              <div class="accordion-body font-open">
+                During a Crystal Healing session, crystals are placed on or around your body to align and balance your energy centers. You can expect to feel relaxed and experience a sense of harmony and clarity.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 10 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeading10">
+              <button class="accordion-button collapsed font-open" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse10" aria-expanded="false" aria-controls="faqCollapse10">
+                Do I need to prepare anything before a Self Care Mentorship session?
+              </button>
+            </h2>
+            <div id="faqCollapse10" class="accordion-collapse collapse" aria-labelledby="faqHeading10" data-bs-parent="#faqAccordion">
+              <div class="accordion-body font-open">
+                It's helpful to reflect on your current self-care routines and areas you'd like to improve. Bring any journals or notes that can assist in personalizing your mentorship experience.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 11 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeading11">
+              <button class="accordion-button collapsed font-open" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse11" aria-expanded="false" aria-controls="faqCollapse11">
+                What is Intuitive Crystal Healing?
+              </button>
+            </h2>
+            <div id="faqCollapse11" class="accordion-collapse collapse" aria-labelledby="faqHeading11" data-bs-parent="#faqAccordion">
+              <div class="accordion-body font-open">
+                Intuitive Crystal Healing combines traditional crystal healing with intuitive insights to address your specific energetic needs, promoting deeper healing and personal growth.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 12 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeading12">
+              <button class="accordion-button collapsed font-open" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse12" aria-expanded="false" aria-controls="faqCollapse12">
+                Can I attend multiple sessions?
+              </button>
+            </h2>
+            <div id="faqCollapse12" class="accordion-collapse collapse" aria-labelledby="faqHeading12" data-bs-parent="#faqAccordion">
+              <div class="accordion-body font-open">
+                Yes, attending multiple sessions can enhance your healing journey and provide deeper insights. We recommend scheduling regular sessions based on your personal needs.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 13 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeading13">
+              <button class="accordion-button collapsed font-open" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse13" aria-expanded="false" aria-controls="faqCollapse13">
+                What areas can Chakra Balance/Cleanse address?
+              </button>
+            </h2>
+            <div id="faqCollapse13" class="accordion-collapse collapse" aria-labelledby="faqHeading13" data-bs-parent="#faqAccordion">
+              <div class="accordion-body font-open">
+                Chakra Balance/Cleanse can address emotional, physical, and spiritual imbalances. It helps in enhancing energy flow, reducing stress, and promoting overall harmony within your body and mind.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 14 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeading14">
+              <button class="accordion-button collapsed font-open" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse14" aria-expanded="false" aria-controls="faqCollapse14">
+                How does Spiritual Coaching & Mentorship work?
+              </button>
+            </h2>
+            <div id="faqCollapse14" class="accordion-collapse collapse" aria-labelledby="faqHeading14" data-bs-parent="#faqAccordion">
+              <div class="accordion-body font-open">
+                Spiritual Coaching & Mentorship involves personalized guidance to help you navigate your spiritual journey, set meaningful goals, and develop strategies for personal and spiritual growth.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 15 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeading15">
+              <button class="accordion-button collapsed font-open" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse15" aria-expanded="false" aria-controls="faqCollapse15">
+                What is the Violet Flame Healing?
+              </button>
+            </h2>
+            <div id="faqCollapse15" class="accordion-collapse collapse" aria-labelledby="faqHeading15" data-bs-parent="#faqAccordion">
+              <div class="accordion-body font-open">
+                Violet Flame Healing is a powerful energy technique used to transmute negative energies into positive ones, promoting healing, purification, and spiritual growth.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 16 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeading16">
+              <button class="accordion-button collapsed font-open" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse16" aria-expanded="false" aria-controls="faqCollapse16">
+                Are your sessions available online?
+              </button>
+            </h2>
+            <div id="faqCollapse16" class="accordion-collapse collapse" aria-labelledby="faqHeading16" data-bs-parent="#faqAccordion">
+              <div class="accordion-body font-open">
+                Yes, we offer virtual sessions through video conferencing platforms. This allows you to receive healing and guidance from the comfort of your own home.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 17 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeading17">
+              <button class="accordion-button collapsed font-open" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse17" aria-expanded="false" aria-controls="faqCollapse17">
+                How do I choose the right service for me?
+              </button>
+            </h2>
+            <div id="faqCollapse17" class="accordion-collapse collapse" aria-labelledby="faqHeading17" data-bs-parent="#faqAccordion">
+              <div class="accordion-body font-open">
+                Our services cater to various needs and preferences. You can review the descriptions on our Services page or reach out through the contact form for personalized recommendations based on your specific goals.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 18 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeading18">
+              <button class="accordion-button collapsed font-open" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse18" aria-expanded="false" aria-controls="faqCollapse18">
+                What qualifications do your practitioners have?
+              </button>
+            </h2>
+            <div id="faqCollapse18" class="accordion-collapse collapse" aria-labelledby="faqHeading18" data-bs-parent="#faqAccordion">
+              <div class="accordion-body font-open">
+                Our practitioners are certified and experienced in their respective fields, including Reiki Masters, Angelic Healers, Crystal Healing Experts, and Certified Spiritual Coaches. Each brings over 20 years of experience to provide you with the best care.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 19 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeading19">
+              <button class="accordion-button collapsed font-open" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse19" aria-expanded="false" aria-controls="faqCollapse19">
+                Do you offer group sessions?
+              </button>
+            </h2>
+            <div id="faqCollapse19" class="accordion-collapse collapse" aria-labelledby="faqHeading19" data-bs-parent="#faqAccordion">
+              <div class="accordion-body font-open">
+                Yes, we offer group sessions and workshops for various healing modalities. These sessions provide a supportive environment for shared healing experiences and collective growth.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 20 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeading20">
+              <button class="accordion-button collapsed font-open" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse20" aria-expanded="false" aria-controls="faqCollapse20">
+                How can I stay updated with your latest events and offers?
+              </button>
+            </h2>
+            <div id="faqCollapse20" class="accordion-collapse collapse" aria-labelledby="faqHeading20" data-bs-parent="#faqAccordion">
+              <div class="accordion-body font-open">
+                Follow us on <a href="https://www.facebook.com/RainbowAngelicTherapies" target="_blank">Facebook</a> and subscribe to our newsletter to receive the latest updates on events, special offers, and new services.
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-light text-center text-muted py-3 mt-5">
+  <footer class="footer-section text-center text-muted py-4">
     <div class="container">
-      <p class="mb-0">&copy; <span id="year"></span> The Sacred Soul Academy. All Rights Reserved.</p>
+      <p class="mb-1">&copy; <span id="year"></span> The Sacred Soul Academy. All Rights Reserved.</p>
       <p class="small mb-0">
-        Website by <a href="https://cleandesignuk.com" target="_blank">Clean Design UK</a>
+        Connect with us on <a href="https://www.facebook.com/RainbowAngelicTherapies" target="_blank">Facebook</a>
       </p>
     </div>
   </footer>
 
+  <!-- SweetAlert JS -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  
+  <!-- Bootstrap JS (Ensure it's loaded after SweetAlert) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Contact Form Script -->
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+    const form = document.getElementById('web3-form');
 
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Form Validation
+      const email = document.getElementById('email').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      const phoneRegexUK = /^(\+44\s?7\d{3}|\(?07\d{3}\)?)\s?\d{3}\s?\d{3}$/;
+      const phoneRegexUS = /^(\+1\s?)?(\([2-9][0-8]\d\)|[2-9][0-8]\d)[\s.-]?\d{3}[\s.-]?\d{4}$/;
+      const phoneRegexAU = /^(\+61\s?)?4\d{8}$/;
+
+      if (!emailRegex.test(email)) {
+        Swal.fire({
+          icon: 'error',
+          title: 'Invalid Email',
+          text: 'Please enter a valid email address.',
+        });
+        return;
+      }
+
+      if (!(phoneRegexUK.test(phone) || phoneRegexUS.test(phone) || phoneRegexAU.test(phone))) {
+        Swal.fire({
+          icon: 'error',
+          title: 'Invalid Phone Number',
+          text: 'Please enter a valid UK, US, or Australian phone number.',
+        });
+        return;
+      }
+
+      // Prepare Form Data
+      const formData = new FormData(form);
+      const object = Object.fromEntries(formData);
+      const json = JSON.stringify(object);
+
+      // Show Loading Alert
+      Swal.fire({
+        title: 'Submitting...',
+        allowOutsideClick: false,
+        didOpen: () => {
+          Swal.showLoading()
+        }
+      });
+
+      // Submit Form via Fetch
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: json
+      })
+      .then(async (response) => {
+        let json = await response.json();
+        if (response.status === 200) {
+          Swal.fire({
+            icon: 'success',
+            title: 'Form Submitted',
+            text: 'Your message has been sent successfully!',
+          });
+        } else {
+          Swal.fire({
+            icon: 'error',
+            title: 'Submission Failed',
+            text: json.message || 'Something went wrong!',
+          });
+        }
+      })
+      .catch(error => {
+        console.error(error);
+        Swal.fire({
+          icon: 'error',
+          title: 'Submission Error',
+          text: 'Something went wrong while submitting the form.',
+        });
+      })
+      .finally(() => {
+        form.reset();
+      });
+    });
+  </script>
+  
 </body>
 </html>
