@@ -8,7 +8,7 @@
   <!-- Google Fonts & Bootstrap -->
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link 
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" 
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" 
     rel="stylesheet"
   />
   <link 
@@ -19,39 +19,15 @@
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
   </script>
 
-  <style>
-    body {
-      font-family: 'Open Sans', sans-serif;
-      background-color: #fdfdfd;
-      color: #333;
-    }
-    .navbar-brand {
-      font-weight: 600;
-    }
-    .hero-section {
-      background: url('placeholder-hero-image.jpg') no-repeat center center/cover;
-      min-height: 70vh;
-      display: flex;
-      align-items: center;
-      color: #fff;
-    }
-    .hero-overlay {
-      background-color: rgba(0, 0, 0, 0.5);
-      padding: 3rem;
-      width: 100%;
-    }
-    .dusky-section {
-      background-color: #f3f0f0; /* A soft, dusky tone */
-      padding: 3rem 0;
-    }
-  </style>
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+  <nav class="navbar navbar-expand-lg navbar-light bg-solid fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="index.html">The Sacred Soul Academy</a>
+      <a class="navbar-brand font-great-vibes" href="index.html">The Sacred Soul Academy</a>
       <button class="navbar-toggler" 
               type="button" data-bs-toggle="collapse" 
               data-bs-target="#navbarNav" 
@@ -59,22 +35,22 @@
               aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav gap-3">
           <li class="nav-item">
-            <a class="nav-link active" href="index.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="#services">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="services.html">Services</a>
+            <a class="nav-link" href="#events">Events</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="events.html">Events</a>
+            <a class="nav-link" href="#workshops">Workshops</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -82,71 +58,255 @@
   </nav>
 
   <!-- Hero Section -->
-  <section class="hero-section">
-    <div class="hero-overlay text-center">
-      <h1 class="display-4">Welcome to The Sacred Soul Academy</h1>
-      <p class="lead my-4">
-        A holistic journey of healing, empowerment, and spiritual transformation.
-      </p>
-      <a href="services.html" class="btn btn-primary btn-lg">Book a Discovery Call</a>
+  <section id="home" class="hero-section d-flex align-items-center justify-content-center text-center">
+    <div class="overlay p-5">
+      <h1 class="display-3 text-white font-great-vibes">Embark on a Healing Journey</h1>
+      <p class="lead text-white mb-4 font-open">Discover your path to spiritual transformation and inner peace.</p>
+      <a href="#services" class="btn btn-primary btn-lg">Explore Our Services</a>
     </div>
   </section>
 
-  <!-- Overview / Proposal & Contract Highlights -->
-  <section class="container py-5">
-    <h2 class="mb-4">Professional & Holistic Online Presence</h2>
-    <p>
-      This website is designed to showcase a wide range of spiritual services, events, 
-      and a streamlined booking experience. Our focus is on:
-    </p>
-    <ul>
-      <li>An intuitive navigation and soothing design to build trust.</li>
-      <li>Easy scheduling tools for discovery calls and sessions.</li>
-      <li>High-quality imagery and calming elements to enhance user experience.</li>
-    </ul>
-
-    <p>
-      Here is a snapshot of our proposal and contract:
-    </p>
-    <div class="alert alert-secondary">
-      <strong>Service Provider:</strong> Clean Design UK<br />
-      <strong>Client:</strong> The Sacred Soul Academy<br />
-      <strong>Email:</strong> <a href="mailto:thesacredsoul@mail.com">thesacredsoul@mail.com</a><br />
-      <strong>Phone:</strong> +44 7527 966409<br />
-      <br />
-      <strong>Project Overview:</strong><br />
-      A 5-page website with integrated scheduling (TimeTree/Calendly), intuitive navigation, 
-      and a calming design to highlight services and events.
-    </div>
-  </section>
-
-  <!-- Cost & Payment (Optional Highlight) -->
-  <section class="dusky-section">
+  <!-- About Us -->
+  <section id="about" class="about-section py-5">
     <div class="container">
-      <h3>Cost Breakdown & Payment Terms</h3>
-      <ul>
-        <li><strong>Total Cost:</strong> £150</li>
-        <li><strong>Deposit (25%):</strong> £37.50</li>
-        <li><strong>Balance (75%):</strong> £112.50 upon completion</li>
-        <li><strong>Monthly Support Services:</strong> £10/month</li>
-      </ul>
-      <p>
-        We require a 25% deposit to commence work, with the remainder due upon project 
-        completion. The monthly support covers hosting, minor updates, and performance 
-        monitoring.
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img src="placeholder-about-image.jpg" alt="About The Sacred Soul Academy" class="img-fluid rounded shadow" />
+        </div>
+        <div class="col-md-6">
+          <h2 class="mb-4 font-playfair">About Us</h2>
+          <p class="font-open">
+            At The Sacred Soul Academy, we believe in fostering a sacred space where you can explore various healing modalities. Our mission is to empower you through spiritual, emotional, and energetic healing, guiding you to reconnect with your true essence.
+          </p>
+          <p class="font-open">
+            With over 20 years of experience, our founder is a certified angel card reader and Reiki master, dedicated to helping you navigate life's challenges with grace and clarity.
+          </p>
+          <a href="#contact" class="btn btn-outline-primary mt-3">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="services-section bg-gradient-pink py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 font-playfair">Our Services</h2>
+      <div class="row">
+        <!-- Service 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="placeholder-service1.jpg" alt="Usui Reiki" class="service-img mb-3" />
+                <h4 class="font-playfair">Usui Reiki</h4>
+              </div>
+              <div class="flip-card-back">
+                <p class="font-open">
+                  Channel universal life force energy to promote relaxation, balance chakras, and support overall well-being.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Service 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="placeholder-service2.jpg" alt="Angelic Reiki" class="service-img mb-3" />
+                <h4 class="font-playfair">Angelic Reiki</h4>
+              </div>
+              <div class="flip-card-back">
+                <p class="font-open">
+                  Experience the gentle yet powerful energy of the angelic realm, enhancing spiritual connection and emotional healing.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Service 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="placeholder-service3.jpg" alt="Crystal Healing" class="service-img mb-3" />
+                <h4 class="font-playfair">Crystal Healing</h4>
+              </div>
+              <div class="flip-card-back">
+                <p class="font-open">
+                  Harness the energetic properties of crystals to align and balance your mind, body, and spirit for renewed clarity and harmony.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Service 4 -->
+        <div class="col-md-4 mb-4">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="placeholder-service4.jpg" alt="Chakra Cleansing" class="service-img mb-3" />
+                <h4 class="font-playfair">Chakra Cleansing</h4>
+              </div>
+              <div class="flip-card-back">
+                <p class="font-open">
+                  Clear and restore energy flow through the seven main chakras to enhance vitality and spiritual insight.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Service 5 -->
+        <div class="col-md-4 mb-4">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="placeholder-service5.jpg" alt="Self Care Mentorship" class="service-img mb-3" />
+                <h4 class="font-playfair">Self Care Mentorship</h4>
+              </div>
+              <div class="flip-card-back">
+                <p class="font-open">
+                  Personalized guidance and strategies to nurture self-love, stress management, and daily wellness routines.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Service 6 -->
+        <div class="col-md-4 mb-4">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="placeholder-service6.jpg" alt="Meditation Sessions" class="service-img mb-3" />
+                <h4 class="font-playfair">Meditation Sessions</h4>
+              </div>
+              <div class="flip-card-back">
+                <p class="font-open">
+                  1-1 Meditation and relaxation sessions designed to help you find inner peace and balance.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <a href="services.html" class="btn btn-primary btn-lg">View All Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Offers -->
+  <section class="featured-section py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 font-playfair">Special Offers</h2>
+      <div class="row">
+        <!-- Offer 1: Three Card Readings for Wolf Moon -->
+        <div class="col-md-6 mb-4">
+          <div class="offer-card p-4 bg-gradient-pink-light rounded shadow">
+            <h4 class="font-playfair">Three Card Readings for Wolf Moon</h4>
+            <p class="text-muted font-open">22nd January 2025</p>
+            <p class="font-open">
+              Embrace the energy of the Full Moon in Cancer with a limited number of Three Angel Card Readings for just £11.00! Perfect for emotional release, healing, and gaining insights from your soul and angels.
+            </p>
+            <a href="#contact" class="btn btn-primary">Book Now</a>
+          </div>
+        </div>
+        <!-- Offer 2: Reiki Drum Treatments -->
+        <div class="col-md-6 mb-4">
+          <div class="offer-card p-4 bg-gradient-pink-light rounded shadow">
+            <h4 class="font-playfair">Reiki Drum Treatments</h4>
+            <p class="text-muted font-open">Transform Your Energy</p>
+            <p class="font-open">
+              Combine the healing vibrations of drumming with Reiki to deeply relax, release emotional blocks, and realign your energy. Experience a transformative journey towards balance and harmony.
+            </p>
+            <a href="#contact" class="btn btn-primary">Book a Session</a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <a href="events.html" class="btn btn-outline-primary btn-lg">Explore More Offers</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Upcoming Events -->
+  <section id="events" class="events-section bg-gradient-pink-dark py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 font-playfair">Our Events</h2>
+      <p class="text-center mb-4 font-open">
+        Join us for a variety of spiritual and healing events designed to nurture your soul and enhance your well-being. From workshops and meditation evenings to group sessions and sound healing, there's something for everyone.
       </p>
-      <p>
-        <em>For the full proposal and contract details, please <a href="contact.html">contact us</a>.</em>
-      </p>
+      <div class="text-center">
+        <a href="events.html" class="btn btn-primary btn-lg">View All Events</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials-section py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 font-playfair">What Our Clients Say</h2>
+      <div class="row justify-content-center">
+        <!-- Testimonial 1 -->
+        <div class="col-md-6 mb-4">
+          <div class="testimonial-card p-4 bg-white rounded shadow">
+            <p class="mb-3 font-open">"Attending the Angelic Reiki session was a transformative experience. I felt deeply connected and balanced afterwards."</p>
+            <h5 class="font-playfair text-pink">- Sarah J.</h5>
+          </div>
+        </div>
+        <!-- Testimonial 2 -->
+        <div class="col-md-6 mb-4">
+          <div class="testimonial-card p-4 bg-white rounded shadow">
+            <p class="mb-3 font-open">"The Reiki Drum Treatments helped me release long-held emotional blocks. Highly recommended!"</p>
+            <h5 class="font-playfair text-pink">- David R.</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta-section text-center py-5">
+    <div class="container">
+      <h2 class="mb-4 font-playfair">Ready to Transform Your Life?</h2>
+      <p class="mb-4 font-open">Begin your journey towards healing and empowerment by exploring our services and joining our upcoming events.</p>
+      <a href="#contact" class="btn btn-primary btn-lg">Get Started</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 font-playfair">Contact Us</h2>
+      <div class="row">
+        <!-- Contact Information -->
+        <div class="col-md-6 mb-4">
+          <h4 class="font-playfair">Get in Touch</h4>
+          <p class="font-open"><strong>Email:</strong> <a href="mailto:thesacredsoul@mail.com">thesacredsoul@mail.com</a></p>
+          <p class="font-open"><strong>Phone / WhatsApp:</strong> +44 7527 966409</p>
+          <p class="font-open">Follow us on <a href="https://www.facebook.com/RainbowAngelicTherapies" target="_blank">Facebook</a> for the latest updates and offerings.</p>
+          <h5 class="mt-4 font-playfair">Privacy Statement</h5>
+          <p class="small text-muted font-open">
+            We respect your privacy and comply with GDPR regulations. Your personal information will only be used to respond to your inquiry and provide relevant services. By contacting us, you consent to our data processing.
+          </p>
+          <a href="contact.html" class="btn btn-outline-primary mt-3">Send Us a Message</a>
+        </div>
+        <!-- Contact Image or Illustration -->
+        <div class="col-md-6">
+          <img src="placeholder-contact-image.jpg" alt="Contact The Sacred Soul Academy" class="img-fluid rounded shadow" />
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-light text-center text-muted py-3 mt-5">
+  <footer class="footer-section text-center text-muted py-4">
     <div class="container">
-      <p class="mb-0">&copy; <span id="year"></span> The Sacred Soul Academy. All Rights Reserved.</p>
+      <p class="mb-1">&copy; <span id="year"></span> The Sacred Soul Academy. All Rights Reserved.</p>
       <p class="small mb-0">
-        Website by <a href="https://cleandesignuk.com" target="_blank">Clean Design UK</a>
+        Connect with us on <a href="https://www.facebook.com/RainbowAngelicTherapies" target="_blank">Facebook</a>
       </p>
     </div>
   </footer>
