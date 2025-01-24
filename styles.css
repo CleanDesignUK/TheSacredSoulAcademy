@@ -1,359 +1,395 @@
 /* General Styles */
 body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: #f9f6f2;
-    color: #4a4a4a;
-    scroll-behavior: smooth;
-  }
-  
-  h1, h2, h3, h4, h5 {
-    font-family: 'Playfair Display', serif;
-    color: #2e2e2e;
-  }
-  
-  .font-playfair {
-    font-family: 'Playfair Display', serif;
-  }
-  
-  .font-great-vibes {
-    font-family: 'Great Vibes', cursive;
-  }
-  
-  .font-open {
-    font-family: 'Open Sans', sans-serif;
-  }
-  
-  a {
-    color: #d291bc; /* Dusty Pink */
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: #a56ca6;
-  }
-  
-  .btn-primary {
-    background-color: #d291bc;
-    border: none;
-    transition: background-color 0.3s ease;
-  }
-  
-  .btn-primary:hover {
-    background-color: #b26aab;
-  }
-  
-  .btn-outline-primary {
-    color: #d291bc;
-    border-color: #d291bc;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  .btn-outline-primary:hover {
-    background-color: #d291bc;
-    color: #fff;
-  }
-  
-  .btn-lg {
-    padding: 0.75rem 1.5rem;
-    font-size: 1.25rem;
-  }
-  
-  .text-pink {
-    color: #d291bc;
-  }
-  
-  /* Navbar Styles */
-  .navbar {
-    padding: 1rem 0;
-    background-color: rgba(255, 255, 255, 0.95); /* Solid background */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  }
-  
-  .navbar-brand {
-    font-family: 'Great Vibes', cursive;
-    font-size: 2rem;
-    color: #2e2e2e !important;
-  }
-  
-  .nav-link {
-    font-weight: 600;
-    color: #4a4a4a !important;
-    transition: color 0.3s ease;
-  }
-  
-  .nav-link.active {
-    color: #d291bc !important;
-  }
-  
-  .navbar-light .navbar-toggler {
-    border-color: #d291bc;
-  }
-  
-  .navbar-light .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23d291bc' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-  }
-  
-  /* Hero Section */
-  .hero-section {
-    background: url('placeholder-hero-image.jpg') no-repeat center center/cover;
-    min-height: 100vh;
-    position: relative;
-  }
-  
-  .hero-section .overlay {
-    background: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay */
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f9f6f2;
+  color: #4a4a4a;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Playfair Display', serif;
+  color: #2e2e2e;
+}
+
+.font-playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-great-vibes {
+  font-family: 'Great Vibes', cursive;
+}
+
+.font-open {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  color: #d291bc; /* Dusty Pink */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #a56ca6;
+}
+
+.btn-primary {
+  background-color: #d291bc;
+  border: 2px solid #d291bc;
+  color: #fff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #a56ca6;
+  color: #fff;
+}
+
+.btn-outline-primary {
+  color: #d291bc;
+  border-color: #d291bc;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  background-color: #d291bc;
+  color: #fff;
+}
+
+.btn-lg {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
+}
+
+.text-pink {
+  color: #d291bc;
+}
+
+/* Navbar Styles */
+.navbar {
+  padding: 1rem 0;
+  background-color: rgba(255, 255, 255, 0.95); /* Solid background */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2rem;
+  color: #2e2e2e !important;
+}
+
+.nav-link {
+  font-weight: 600;
+  color: #4a4a4a !important;
+  transition: color 0.3s ease;
+}
+
+.nav-link.active {
+  color: #d291bc !important;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: #d291bc;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23d291bc' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Hero Section */
+.hero-section {
+  background-image: url('hero-2.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+}
+
+.hero-section .overlay {
+  background: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay */
+  min-height: 100vh;
+  width:100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero-section p {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Flip Card Styles */
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 15px;
+}
+
+.flip-card-front {
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #d291bc;
+}
+
+.flip-card-back {
+  background-color: rgba(210, 145, 188, 0.9);
+  color: white;
+  transform: rotateY(180deg);
+  padding: 1rem;
+  border: 2px solid #d291bc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  border-radius: 15px;
+}
+
+/* About Section */
+.about-section img {
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.about-section h2 {
+  color: #a56ca6;
+}
+
+/* Services Section */
+.services-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.parallax-background {
+  background-image: url('service-background.png'); /* Replace with actual image */
+  height: 120%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+/* Featured Offers */
+.featured-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.fixed-background {
+  background-image: url('special-offer.png'); /* Replace with actual image */
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.featured-section .offer-card {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.featured-section .offer-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.featured-section .offer-card h4 {
+  color: #2e2e2e;
+}
+
+.featured-section .offer-card .text-muted {
+  color: #a56ca6;
+}
+
+/* Events Section */
+.events-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.parallax-background-events {
+  background-image: url('our-events.png'); /* Replace with actual image */
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.events-section h2 {
+  color: #a56ca6;
+}
+
+.events-section p {
+  color: #4a4a4a;
+}
+
+/* Testimonials Section */
+.testimonials-section .testimonial-card {
+  background-color: #fff;
+  border-left: 5px solid #d291bc;
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: box-shadow 0.3s;
+}
+
+.testimonials-section .testimonial-card:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.testimonials-section .testimonial-card p {
+  font-style: italic;
+}
+
+.testimonials-section .testimonial-card h5 {
+  margin-top: 1rem;
+  color: #d291bc;
+}
+
+/* Call to Action Section */
+.cta-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.parallax-background-cta {
+  background-image: url('placeholder-cta-background.jpg'); /* Replace with actual image */
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.cta-section img {
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.cta-section h2 {
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.cta-section p {
+  font-size: 1.25rem;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+/* Contact Section */
+.contact-section a {
+  color: #d291bc;
+}
+
+.contact-section a:hover {
+  text-decoration: underline;
+}
+
+.contact-section img {
+  max-height: 300px;
+  object-fit: cover;
+}
+
+/* Footer */
+.footer-section a {
+  color: #d291bc;
+}
+
+.footer-section a:hover {
+  color: #a56ca6;
+}
+
+/* Flip Card Enhancements */
+.flip-card {
+  margin-bottom: 1.5rem;
+}
+
+.flip-card-inner {
+  border-radius: 15px;
+}
+
+.services-section .flip-card-front,
+.services-section .flip-card-back {
+  border-radius: 15px;
+}
+
+.services-section .flip-card-front,
+.services-section .flip-card-back {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
   .hero-section h1 {
-    font-size: 3rem;
-    font-weight: 700;
+    font-size: 2.5rem;
   }
   
   .hero-section p {
-    font-size: 1.25rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  /* Flip Card Styles */
-  .flip-card {
-    background-color: transparent;
-    width: 100%;
-    height: 300px;
-    perspective: 1000px;
-  }
-  
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-  }
-  
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 15px;
-  }
-  
-  .flip-card-front {
-    background-color: rgba(255, 255, 255, 0.8);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #d291bc;
-  }
-  
-  .flip-card-back {
-    background-color: rgba(210, 145, 188, 0.9);
-    color: white;
-    transform: rotateY(180deg);
-    padding: 1rem;
-    border: 1px solid #d291bc;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-size: 1rem;
-    border-radius: 15px;
-  }
-  
-  /* About Section */
-  .about-section img {
-    max-height: 400px;
-    object-fit: cover;
-  }
-  
-  .about-section h2 {
-    color: #a56ca6;
-  }
-  
-  /* Services Section */
-  .services-section {
-    background: linear-gradient(135deg, #fbd3e9, #bb377d);
-  }
-  
-  .services-section .flip-card-front {
-    background-color: rgba(255, 255, 255, 0.8);
-  }
-  
-  .services-section .flip-card-back {
-    background-color: rgba(210, 145, 188, 0.9);
-  }
-  
-  /* Featured Offers */
-  .featured-section .offer-card {
-    background: linear-gradient(135deg, #fbd3e9, #bb377d);
-    color: #fff;
-    border-radius: 10px;
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
-  
-  .featured-section .offer-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-  }
-  
-  .featured-section .offer-card h4 {
-    color: #fff;
-  }
-  
-  .featured-section .offer-card .text-muted {
-    color: #ffe4e1;
-  }
-  
-  /* Events Section */
-  .events-section {
-    background: linear-gradient(135deg, #bb377d, #fbd3e9);
-  }
-  
-  .events-section h2 {
-    color: #a56ca6;
-  }
-  
-  .events-section p {
-    color: #4a4a4a;
-  }
-  
-  /* Testimonials Section */
-  .testimonials-section .testimonial-card {
-    background-color: #fff;
-    border-left: 5px solid #d291bc;
-    border-radius: 10px;
-    padding: 1.5rem;
-    transition: box-shadow 0.3s;
-  }
-  
-  .testimonials-section .testimonial-card:hover {
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-  }
-  
-  .testimonials-section .testimonial-card p {
-    font-style: italic;
-  }
-  
-  .testimonials-section .testimonial-card h5 {
-    margin-top: 1rem;
-    color: #d291bc;
-  }
-  
-  /* Call to Action */
-  .cta-section {
-    background: linear-gradient(135deg, #d291bc, #a56ca6);
-    color: #fff;
   }
   
   .cta-section h2 {
-    font-size: 2.5rem;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    font-size: 2rem;
   }
   
   .cta-section p {
-    font-size: 1.25rem;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    font-size: 1rem;
   }
   
-  /* Contact Section */
-  .contact-section a {
-    color: #d291bc;
+  .navbar-brand {
+    font-size: 1.75rem;
   }
-  
-  .contact-section a:hover {
-    text-decoration: underline;
-  }
-  
-  .contact-section img {
-    max-height: 300px;
-    object-fit: cover;
-  }
-  
-  /* Footer */
-  .footer-section a {
-    color: #d291bc;
-  }
-  
-  .footer-section a:hover {
-    color: #a56ca6;
-  }
-  
-  /* Gradient Colors */
-  .bg-gradient-pink {
-    background: linear-gradient(135deg, #fbd3e9, #bb377d);
-  }
-  
-  .bg-gradient-pink-light {
-    background: linear-gradient(135deg, rgba(251, 211, 233, 0.8), rgba(187, 55, 125, 0.8));
-  }
-  
-  .bg-gradient-pink-dark {
-    background: linear-gradient(135deg, rgba(187, 55, 125, 0.8), rgba(251, 211, 233, 0.8));
-  }
-  
-  /* Responsive Adjustments */
-  @media (max-width: 768px) {
-    .hero-section h1 {
-      font-size: 2.5rem;
-    }
-    
-    .hero-section p {
-      font-size: 1rem;
-    }
-    
-    .cta-section h2 {
-      font-size: 2rem;
-    }
-    
-    .cta-section p {
-      font-size: 1rem;
-    }
-    
-    .navbar-brand {
-      font-size: 1.75rem;
-    }
-  }
-  
-  /* Flip Card Enhancements */
-  .flip-card-front {
-    border: 1px solid #d291bc;
-  }
-  
-  .flip-card-back {
-    padding: 1rem;
-  }
-  
-  /* Additional Styles for Whimsical Elements */
-  .decorative-circle,
-  .decorative-leaf {
-    /* Positioning decorative elements if needed */
-  }
-  
-  .flip-card-inner {
-    border-radius: 15px;
-  }
-  
-  .services-section .flip-card {
-    margin-bottom: 1.5rem;
-  }
-  
-  .services-section .flip-card-front,
-  .services-section .flip-card-back {
-    border-radius: 15px;
-  }
-  
-  /* Ensuring flipping cards have shadows */
-  .flip-card-front,
-  .flip-card-back {
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  }
-  
+}
