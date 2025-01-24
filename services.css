@@ -1,0 +1,467 @@
+/*====================================================
+  SERVICES.CSS – Luxury Enhancement
+====================================================*/
+
+/*------------------------------
+  1. GLOBAL STYLES
+------------------------------*/
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #4a4a4a;
+  line-height: 1.6;
+  background-color: #faf9f7; /* Subtle background to maintain elegance */
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 0.75rem;
+}
+
+.font-playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-great-vibes {
+  font-family: 'Great Vibes', cursive;
+}
+
+.font-open {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*------------------------------
+  2. NAVBAR
+------------------------------*/
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .navbar-brand {
+  font-size: 1.75rem;
+  color: #d291bc;
+  transition: color 0.3s ease;
+}
+
+.navbar .navbar-brand:hover {
+  color: #a56ca6;
+}
+
+.navbar .nav-link {
+  color: #4a4a4a;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #d291bc;
+}
+
+/*------------------------------
+  3. HERO SECTION
+------------------------------*/
+#hero {
+  background-image: url("https://via.placeholder.com/1920x1080?text=Services+Hero");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 80vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero .overlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  max-width: 700px;
+}
+
+#hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+#hero p {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#hero .btn-outline-light {
+  border-color: #d291bc;
+  color: #fff;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  border-width: 2px;
+  border-radius: 25px;
+  padding: 0.75rem 2rem;
+}
+
+#hero .btn-outline-light:hover {
+  background-color: #d291bc;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  40% {
+    transform: translateX(-50%) translateY(-10px);
+  }
+  60% {
+    transform: translateX(-50%) translateY(-5px);
+  }
+}
+
+.scroll-down a {
+  color: #d291bc;
+  transition: color 0.3s ease;
+}
+
+.scroll-down a:hover {
+  color: #a56ca6;
+}
+
+/*------------------------------
+  4. SERVICE SECTIONS
+------------------------------*/
+.service-section {
+  padding: 4rem 0;
+  position: relative;
+}
+
+.service-section h2,
+.service-section h4,
+.service-section h5 {
+  letter-spacing: 0.5px;
+}
+
+.service-section h2 {
+  color: #a56ca6;
+  margin-bottom: 1rem;
+}
+
+.service-section h4 {
+  color: #d291bc;
+  margin-bottom: 1rem;
+}
+
+.service-section h5 {
+  color: #a56ca6;
+  margin-bottom: 0.75rem;
+}
+
+.service-section p {
+  color: #4a4a4a;
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+/* Common container for images */
+.service-image {
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-image:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* For sections with images overlaying text */
+.overlay-text {
+  background-color: rgba(0, 0, 0, 0.55);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0 0 10px 10px;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.overlay-text:hover {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+/* For small badges used in workshops, etc. */
+.service-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.badge-pink {
+  background-color: #d291bc;
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+}
+
+/* Flip Cards */
+.flip-card {
+  background-color: transparent;
+  perspective: 1000px;
+  border-radius: 10px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  height: 280px; /* Give cards consistent height */
+  border-radius: 10px;
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.flip-card-front {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+}
+
+.flip-card-back {
+  background-color: #d291bc;
+  color: #fff;
+  transform: rotateY(180deg);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Icon Cards */
+.icon-card {
+  width: 150px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+}
+
+.icon-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.icon-card i {
+  color: #d291bc;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+}
+
+/* Mosaic Grid */
+.mosaic-grid img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mosaic-grid img:hover {
+  transform: scale(1.06);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Zigzag Layout (Violet Flame Healing) */
+.zigzag-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.zigzag-left,
+.zigzag-right {
+  flex: 1 1 45%;
+  min-width: 250px;
+}
+
+/* Event-Related container */
+.bg-white.border {
+  background-color: #fff;
+  border: 1px solid #ececec;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+}
+
+/*------------------------------
+  5. CTA Buttons
+------------------------------*/
+.btn-pink {
+  background-color: #d291bc;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-pink:hover {
+  background-color: #a56ca6;
+  transform: translateY(-2px);
+}
+
+.btn-white {
+  background-color: #fff;
+  color: #d291bc;
+  border: 2px solid #d291bc;
+  border-radius: 25px;
+  padding: 0.6rem 1.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  font-weight: 600;
+}
+
+.btn-white:hover {
+  background-color: #d291bc;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/*------------------------------
+  6. SCHEDULING SECTION
+------------------------------*/
+.scheduling-section {
+  background-color: #f9f6f2;
+  padding: 4rem 0;
+}
+
+.scheduling-section h2 {
+  color: #a56ca6;
+  margin-bottom: 1rem;
+}
+
+.scheduling-section p {
+  color: #4a4a4a;
+  margin-bottom: 1.5rem;
+}
+
+.scheduling-section iframe {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/*------------------------------
+  7. FOOTER
+------------------------------*/
+.footer-section {
+  background-color: #2c2c2c;
+  color: #fff;
+  padding: 2rem 0;
+}
+
+.footer-section p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.footer-section a {
+  color: #d291bc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: #a56ca6;
+}
+
+/*------------------------------
+  8. RESPONSIVE ADJUSTMENTS
+------------------------------*/
+@media (max-width: 992px) {
+  #hero h1 {
+    font-size: 2.5rem;
+  }
+  #hero p {
+    font-size: 1rem;
+  }
+  .service-section {
+    padding: 3rem 0;
+  }
+  .flip-card-inner {
+    height: 250px;
+  }
+  .zigzag-container {
+    flex-direction: column;
+  }
+  .zigzag-left,
+  .zigzag-right {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 2rem;
+  }
+  #hero p {
+    font-size: 0.875rem;
+  }
+  .service-badges .badge {
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+  }
+  .icon-card {
+    width: 120px;
+  }
+  .mosaic-grid img {
+    width: 100%;
+    height: auto;
+  }
+  .flip-card-inner {
+    height: 220px;
+  }
+}
+
+@media (max-width: 576px) {
+  .service-badges .badge {
+    font-size: 0.7rem;
+    padding: 0.4rem 0.8rem;
+  }
+  .icon-card {
+    width: 100px;
+  }
+  .flip-card-inner {
+    height: 200px;
+  }
+  .scheduling-section iframe {
+    height: 400px;
+  }
+  #hero h1 {
+    font-size: 1.8rem;
+  }
+  #hero p {
+    font-size: 0.85rem;
+  }
+}
