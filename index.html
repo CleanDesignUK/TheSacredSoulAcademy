@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Sacred Soul Academy – Home</title>
+  
+  <!-- Google Fonts & Bootstrap -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" 
+    rel="stylesheet"
+  />
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+    rel="stylesheet"
+  />
+  <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+  </script>
+
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #fdfdfd;
+      color: #333;
+    }
+    .navbar-brand {
+      font-weight: 600;
+    }
+    .hero-section {
+      background: url('placeholder-hero-image.jpg') no-repeat center center/cover;
+      min-height: 70vh;
+      display: flex;
+      align-items: center;
+      color: #fff;
+    }
+    .hero-overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 3rem;
+      width: 100%;
+    }
+    .dusky-section {
+      background-color: #f3f0f0; /* A soft, dusky tone */
+      padding: 3rem 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">The Sacred Soul Academy</a>
+      <button class="navbar-toggler" 
+              type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" 
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="events.html">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-overlay text-center">
+      <h1 class="display-4">Welcome to The Sacred Soul Academy</h1>
+      <p class="lead my-4">
+        A holistic journey of healing, empowerment, and spiritual transformation.
+      </p>
+      <a href="services.html" class="btn btn-primary btn-lg">Book a Discovery Call</a>
+    </div>
+  </section>
+
+  <!-- Overview / Proposal & Contract Highlights -->
+  <section class="container py-5">
+    <h2 class="mb-4">Professional & Holistic Online Presence</h2>
+    <p>
+      This website is designed to showcase a wide range of spiritual services, events, 
+      and a streamlined booking experience. Our focus is on:
+    </p>
+    <ul>
+      <li>An intuitive navigation and soothing design to build trust.</li>
+      <li>Easy scheduling tools for discovery calls and sessions.</li>
+      <li>High-quality imagery and calming elements to enhance user experience.</li>
+    </ul>
+
+    <p>
+      Here is a snapshot of our proposal and contract:
+    </p>
+    <div class="alert alert-secondary">
+      <strong>Service Provider:</strong> Clean Design UK<br />
+      <strong>Client:</strong> The Sacred Soul Academy<br />
+      <strong>Email:</strong> <a href="mailto:thesacredsoul@mail.com">thesacredsoul@mail.com</a><br />
+      <strong>Phone:</strong> +44 7527 966409<br />
+      <br />
+      <strong>Project Overview:</strong><br />
+      A 5-page website with integrated scheduling (TimeTree/Calendly), intuitive navigation, 
+      and a calming design to highlight services and events.
+    </div>
+  </section>
+
+  <!-- Cost & Payment (Optional Highlight) -->
+  <section class="dusky-section">
+    <div class="container">
+      <h3>Cost Breakdown & Payment Terms</h3>
+      <ul>
+        <li><strong>Total Cost:</strong> £150</li>
+        <li><strong>Deposit (25%):</strong> £37.50</li>
+        <li><strong>Balance (75%):</strong> £112.50 upon completion</li>
+        <li><strong>Monthly Support Services:</strong> £10/month</li>
+      </ul>
+      <p>
+        We require a 25% deposit to commence work, with the remainder due upon project 
+        completion. The monthly support covers hosting, minor updates, and performance 
+        monitoring.
+      </p>
+      <p>
+        <em>For the full proposal and contract details, please <a href="contact.html">contact us</a>.</em>
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-light text-center text-muted py-3 mt-5">
+    <div class="container">
+      <p class="mb-0">&copy; <span id="year"></span> The Sacred Soul Academy. All Rights Reserved.</p>
+      <p class="small mb-0">
+        Website by <a href="https://cleandesignuk.com" target="_blank">Clean Design UK</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
