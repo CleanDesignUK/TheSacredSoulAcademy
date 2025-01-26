@@ -11,6 +11,8 @@ body {
   line-height: 1.6;
   background-color: #faf9f7; /* Subtle background to maintain elegance */
   overflow-x: hidden;
+  margin:0;
+  width:100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -63,7 +65,7 @@ h1, h2, h3, h4, h5, h6 {
   3. HERO SECTION
 ------------------------------*/
 #hero {
-  background-image: url("https://via.placeholder.com/1920x1080?text=Services+Hero");
+  background-image: url("hero.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
