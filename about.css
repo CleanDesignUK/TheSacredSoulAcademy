@@ -1,24 +1,29 @@
 /* About Page Specific Styles */
 
 /* Hero Section Styling */
+/* Hero Section Styling */
 .about-hero {
-    background-image: url('https://via.placeholder.com/1920x1080'); /* Replace with your desired image */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 80vh;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .about-hero .overlay {
-    background: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
-    padding: 2rem;
-    border-radius: 10px;
-  }
+  background-image: url('hero-2.jpg'); /* Replace with your desired image */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 80vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-hero .overlay {
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+  padding: 2rem;
+  border-radius: 10px;
+  min-height: 80vh;
+  width: 100%; /* Changed from min-width: 100vw to width: 100% */
+  box-sizing: border-box; /* Ensures padding is included within the width */
+}
+
   
   .about-hero h1 {
     font-size: 3rem;
@@ -102,7 +107,7 @@
   
   /* Call to Action Section */
   .cta-section {
-    background-image: url('https://via.placeholder.com/1920x600'); /* Replace with your desired image */
+    background-image: url('special-offer.png'); /* Replace with your desired image */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -114,11 +119,15 @@
     justify-content: center;
   }
   
-  .cta-section .overlay {
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
-    padding: 2rem;
-    border-radius: 10px;
-  }
+ /* Call to Action Section */
+.cta-section .overlay {
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  padding: 2rem;
+  border-radius: 10px;
+  width: 100%; /* Ensure it doesn't exceed the parent width */
+  box-sizing: border-box; /* Include padding within the width */
+}
+
   
   .cta-section h2 {
     font-size: 2.5rem;
@@ -237,4 +246,6 @@
   .card:hover i {
     transform: scale(1.2);
   }
+  
+
   
