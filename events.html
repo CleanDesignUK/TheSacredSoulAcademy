@@ -3,34 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>The Sacred Soul Academy – Events</title>
+  <title>The Sacred Soul Academy – Events in Pembrokeshire</title>
   
   <!-- SEO Meta Tags -->
   <meta
     name="description"
-    content="Explore our upcoming events and workshops at The Sacred Soul Academy. Join us for intuitive card reading, Tarot retreats, and more!"
+    content="Explore our upcoming events and workshops at The Sacred Soul Academy in Pembrokeshire. Join us for intuitive card readings, Tarot retreats, and transformative spiritual events."
   />
   <meta
     name="keywords"
-    content="Holistic Events, Spiritual Workshops, Meditation Retreats, Tarot, Angel Card Reading"
+    content="Pembrokeshire, Holistic Events, Spiritual Workshops, Meditation Retreats, Tarot, Angel Card Reading, Events Pembrokeshire"
   />
   <meta name="author" content="The Sacred Soul Academy" />
-
+  
   <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="Events – The Sacred Soul Academy" />
+  <meta property="og:title" content="Events – The Sacred Soul Academy – Pembrokeshire" />
   <meta
     property="og:description"
-    content="Join our transformative workshops and retreats. Expand your intuition, learn Tarot, and harness spiritual alignment."
+    content="Join our transformative workshops and retreats in Pembrokeshire. Expand your intuition and discover the power of spiritual alignment through our events."
   />
   <meta
     property="og:image"
     content="https://www.thesacredsoulacademy.com/images/social-events.jpg"
   />
-  <meta
-    property="og:url"
-    content="https://www.thesacredsoulacademy.com/events.html"
-  />
+  <meta property="og:url" content="https://www.thesacredsoulacademy.com/events.html" />
   <meta property="og:type" content="website" />
+  
 
   <!-- Google Fonts & Bootstrap -->
   <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -52,7 +50,14 @@
     referrerpolicy="no-referrer"
   />
 
-  <!-- Custom Events Styles -->
+  <!-- Bootstrap Icons for Checklists -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+  />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="events.css" />
 
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -122,24 +127,20 @@
     <div class="row g-4">
       <!-- Event 1: Intuitive Angel Card Reading Workshop -->
       <div class="col-md-6" id="angel-card-workshop">
-        <div class="events-card p-3 shadow-sm h-100">
-          <img
-            src="https://via.placeholder.com/600x400?text=Angel+Card+Workshop"
-            alt="Angel Card Workshop"
-            class="img-fluid rounded mb-3"
+        <div class="events-card p-3 shadow-sm h-100 d-flex flex-column">
+          <img 
+            src="angel-card-reading-image.jpg" 
+            alt="Angel Card Reading Workshop" 
+            class="img-fluid card-img"
           />
-          <h4 class="font-playfair text-pink">Intuitive Angel Card Reading Workshop</h4>
+          <h4 class="font-playfair text-pink mt-3">Intuitive Angel Card Reading Workshop</h4>
           <p class="event-date text-muted mb-2">13th April 2025, 10am–4pm</p>
           <p>
             A one-day interactive workshop to help you connect with your Angels and master
             the art of intuitive card readings.
           </p>
           <!-- Button trigger modal -->
-          <button 
-            class="btn btn-pink" 
-            data-bs-toggle="modal" 
-            data-bs-target="#angelModal"
-          >
+          <button class="btn btn-pink mt-auto" data-bs-toggle="modal" data-bs-target="#angelModal">
             View More
           </button>
         </div>
@@ -147,24 +148,20 @@
 
       <!-- Event 2: Weekend Tarot Retreat -->
       <div class="col-md-6" id="tarot-retreat">
-        <div class="events-card p-3 shadow-sm h-100">
-          <img
-            src="https://via.placeholder.com/600x400?text=Tarot+Retreat"
-            alt="Tarot Retreat Weekend"
-            class="img-fluid rounded mb-3"
+        <div class="events-card p-3 shadow-sm h-100 d-flex flex-column">
+          <img 
+            src="tarot-reading.jpg" 
+            alt="Tarot Retreat Weekend" 
+            class="img-fluid card-img"
           />
-          <h4 class="font-playfair text-pink">Tarot Retreat Weekend</h4>
-          <p class="event-date text-muted mb-2">2-Day Event Feb 8-9  (10am-5pm)  in Milford Haven</p>
+          <h4 class="font-playfair text-pink mt-3">Tarot Retreat Weekend</h4>
+          <p class="event-date text-muted mb-2">2-Day Event Feb 8-9 (10am-5pm) in Milford Haven</p>
           <p>
             A wonderful weekend to dive deep into Tarot, build intuitive skills,
             and gain confidence in reading for yourself or others.
           </p>
           <!-- Button trigger modal -->
-          <button 
-            class="btn btn-pink" 
-            data-bs-toggle="modal" 
-            data-bs-target="#tarotModal"
-          >
+          <button class="btn btn-pink mt-auto" data-bs-toggle="modal" data-bs-target="#tarotModal">
             View More
           </button>
         </div>
@@ -174,57 +171,41 @@
 
   <!-- MODALS FOR EVENTS -->
   <!-- Modal 1: Intuitive Angel Card Reading Workshop -->
-  <div 
-    class="modal fade" 
-    id="angelModal" 
-    tabindex="-1" 
-    aria-labelledby="angelModalLabel" 
-    aria-hidden="true"
-  >
+  <div class="modal fade" id="angelModal" tabindex="-1" aria-labelledby="angelModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content">
+      <div class="modal-content modal-custom">
         <div class="modal-header">
           <h5 class="modal-title font-playfair" id="angelModalLabel">
             Intuitive Angel Card Reading Workshop
           </h5>
-          <button 
-            type="button" 
-            class="btn-close" 
-            data-bs-dismiss="modal" 
-            aria-label="Close"
-          ></button>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body text-center">
+          <img src="angel-card-reading-image.jpg" alt="Angel Card Reading Workshop" class="img-fluid modal-img mb-3">
           <p class="font-open">
-            <strong>Date & Time:</strong> 13th April 2025, 10am–4pm<br/>
+            <strong>Date & Time:</strong> 13th April 2025, 10am–4pm<br>
             <strong>Location:</strong> Milford Haven
           </p>
           <p class="font-open">
             Join me for a transformative one-day workshop on performing Angel Card Readings!
-            Whether you wish to read for yourself or aspire to guide others, this workshop 
-            will provide you with the insights you need.
+            Whether you wish to read for yourself or aspire to guide others, this workshop will provide you with the insights you need.
           </p>
-          <ul class="font-open">
-            <li>Creating a safe reading space & connecting with Angels</li>
-            <li>Understanding imagery and the structure of the deck</li>
-            <li>Conducting Angel Card Readings & managing client expectations</li>
-            <li>Enhancing intuition and recommendations for further study</li>
-          </ul>
-          <p class="font-open">
-            <strong>Investment:</strong> £77 (provide your own deck) or £99 (deck included).<br/>
+          <div class="modal-checklist text-start">
+            <p><i class="bi bi-check-lg text-pink me-2"></i>Creating a safe reading space &amp; connecting with Angels</p>
+            <p><i class="bi bi-check-lg text-pink me-2"></i>Understanding imagery and the structure of the deck</p>
+            <p><i class="bi bi-check-lg text-pink me-2"></i>Conducting Angel Card Readings &amp; managing client expectations</p>
+            <p><i class="bi bi-check-lg text-pink me-2"></i>Enhancing intuition and recommendations for further study</p>
+          </div>
+          <p class="font-open mt-3">
+            <strong>Investment:</strong> £77 (provide your own deck) or £99 (deck included).<br>
             Non-refundable deposit to secure your place. Only 6 attendees.
           </p>
           <p class="font-open">
-            If you’d like more information or to reserve a space, please drop me a message or WhatsApp 
-            07527966409.
+            For more information or to reserve a space, please drop me a message or WhatsApp 07527966409.
           </p>
         </div>
         <div class="modal-footer">
-          <button 
-            type="button" 
-            class="btn btn-outline-primary" 
-            data-bs-dismiss="modal"
-          >
+          <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">
             Close
           </button>
           <a href="contact.html" class="btn btn-pink">
@@ -236,61 +217,46 @@
   </div>
 
   <!-- Modal 2: Tarot Retreat Weekend -->
-  <div 
-    class="modal fade" 
-    id="tarotModal" 
-    tabindex="-1" 
-    aria-labelledby="tarotModalLabel" 
-    aria-hidden="true"
-  >
+  <div class="modal fade" id="tarotModal" tabindex="-1" aria-labelledby="tarotModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content">
+      <div class="modal-content modal-custom">
         <div class="modal-header">
           <h5 class="modal-title font-playfair" id="tarotModalLabel">
             Tarot Retreat Weekend
           </h5>
-          <button 
-            type="button" 
-            class="btn-close" 
-            data-bs-dismiss="modal" 
-            aria-label="Close"
-          ></button>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body text-center">
+          <img src="tarot-reading.jpg" alt="Tarot Retreat Weekend" class="img-fluid modal-img mb-3">
           <p class="font-open">
-            <strong>Duration:</strong> 2 Days<br/>
+            <strong>Duration:</strong> 2 Days<br>
             <strong>Location:</strong> Milford Haven
           </p>
           <p class="font-open">
-            Join me for a wonderful weekend of Tarot exploration, where I will share my knowledge 
-            from over 20 years of using the Tarot. Using this magical mirror for guidance and clarity, 
-            let’s unlock your power so you, too, can intuitively read the cards.
+            Join me for a wonderful weekend of Tarot exploration, where I will share my knowledge from over 20 years of using the Tarot.
+            Using this magical mirror for guidance and clarity, let’s unlock your power so you, too, can intuitively read the cards.
           </p>
-          <ul class="font-open">
-            <li>History of the Tarot & recommended resources</li>
-            <li>Creating a safe reading space & client-management</li>
-            <li>Exercises to enhance intuition</li>
-            <li>Major & Minor Arcana, suits, court cards, and spreads</li>
-            <li>Cultivating confidence for intuitive reading</li>
-          </ul>
-          <p class="font-open">
-            <strong>What You Will Receive:</strong><br/>
-            – Two full days of training & practice<br/>
-            – Course notes & a Rider Waite deck to take home<br/>
-            – A crystal to enhance your intuition<br/>
+          <div class="modal-checklist text-start">
+            <p><i class="bi bi-check-lg text-pink me-2"></i>History of the Tarot &amp; recommended resources</p>
+            <p><i class="bi bi-check-lg text-pink me-2"></i>Creating a safe reading space &amp; client-management</p>
+            <p><i class="bi bi-check-lg text-pink me-2"></i>Exercises to enhance intuition</p>
+            <p><i class="bi bi-check-lg text-pink me-2"></i>Major &amp; Minor Arcana, suits, court cards, and spreads</p>
+            <p><i class="bi bi-check-lg text-pink me-2"></i>Cultivating confidence for intuitive reading</p>
+          </div>
+          <p class="font-open mt-3">
+            <strong>What You Will Receive:</strong><br>
+            – Two full days of training &amp; practice<br>
+            – Course notes &amp; a Rider Waite deck to take home<br>
+            – A crystal to enhance your intuition<br>
             – Ongoing support via our online student platform
           </p>
           <p class="font-open">
-            <strong>Investment:</strong> £144. Small group (max. 6).<br/>
+            <strong>Investment:</strong> £144. Small group (max. 6).<br>
             To book, please WhatsApp Mikey on 07527966409.
           </p>
         </div>
         <div class="modal-footer">
-          <button 
-            type="button" 
-            class="btn btn-outline-primary" 
-            data-bs-dismiss="modal"
-          >
+          <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">
             Close
           </button>
           <a href="contact.html" class="btn btn-pink">
