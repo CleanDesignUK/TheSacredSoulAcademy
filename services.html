@@ -28,7 +28,7 @@
 />
 <meta property="og:url" content="https://www.thesacredsoulacademy.com/services.html" />
 <meta property="og:type" content="website" />
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 
   <!-- Google Fonts & Bootstrap -->
   <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -66,177 +66,69 @@
 </head>
 <body style="width:100%;">
   <!-- Navigation -->
+ 
+  <!-- Navigation (Singular pronouns) -->
   <nav class="navbar navbar-expand-lg navbar-light bg-solid fixed-top">
     <div class="container">
-      <a class="navbar-brand font-great-vibes" href="index.html">
-        The Sacred Soul Academy
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+      <a class="navbar-brand font-great-vibes" href="index.html">The Sacred Soul Academy</a>
+      <button class="navbar-toggler" 
+              type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" 
+              aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav gap-3">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link active" href="index.html">Home</a>
           </li>
-
-          <!-- Services Dropdown (Course-related links removed) -->
+          
+          <!-- Services Dropdown -->
           <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle active"
-              href="services.html"
-              id="navbarDropdownServices"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Services
+            <a class="nav-link dropdown-toggle" href="services.html" id="navbarDropdownServices" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              My Services
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownServices">
-              <li>
-                <a class="dropdown-item" href="services.html#card-readings"
-                  >Oracle Card Readings</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item" href="services.html#reiki-drum-treatment"
-                  >Reiki Drum Treatment</a
-                >
-              </li>
-              <li>
-                <a
-                  class="dropdown-item"
-                  href="services.html#usui-reiki-reiki-drum"
-                  >Usui Reiki/Reiki Drum</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item" href="services.html#angelic-reiki"
-                  >Angelic Reiki</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item" href="services.html#crystal-healing"
-                  >Crystal Healing</a
-                >
-              </li>
-              <li>
-                <a
-                  class="dropdown-item"
-                  href="services.html#spiritual-coaching-mentorship"
-                  >Spiritual Coaching &amp; Mentorship</a
-                >
-              </li>
-              <li>
-                <a
-                  class="dropdown-item"
-                  href="services.html#chakra-balance-cleanse"
-                  >Chakra Balance/Cleanse</a
-                >
-              </li>
-              <li>
-                <a
-                  class="dropdown-item"
-                  href="services.html#self-care-mentorship-soul-approach"
-                  >Self Care Mentorship – The Soul Approach</a
-                >
-              </li>
-              <li>
-                <a
-                  class="dropdown-item"
-                  href="services.html#one-one-meditation-relaxation-sessions"
-                  >1-1 Meditation/Relaxation Sessions</a
-                >
-              </li>
-              <li>
-                <a
-                  class="dropdown-item"
-                  href="services.html#violet-flame-healing"
-                  >Violet Flame Healing</a
-                >
-              </li>
-              <li>
-                <a
-                  class="dropdown-item"
-                  href="services.html#intuitive-crystal-healing"
-                  >Intuitive Crystal Healing</a
-                >
-              </li>
-              <li>
-                <a
-                  class="dropdown-item"
-                  href="services.html#event-related-questions"
-                  >Event-Related Questions</a
-                >
-              </li>
-              <li>
-                <a
-                  class="dropdown-item"
-                  href="services.html#small-group-meditation-visualisation"
-                  >Small Group Meditation &amp; Visualisation</a
-                >
-              </li>
+              <li><a class="dropdown-item" href="services.html#card-readings">Card Readings</a></li>
+              <li><a class="dropdown-item" href="services.html#reiki-drum-treatment">Reiki Drum Treatment</a></li>
+              <li><a class="dropdown-item" href="services.html#intuitive-angel-card-reading-workshop">Intuitive Angel Card Reading Workshop</a></li>
+              <li><a class="dropdown-item" href="services.html#usui-reiki-reiki-drum">Usui Reiki/Reiki Drum</a></li>
+              <li><a class="dropdown-item" href="services.html#usui-reiki-training">Usui Reiki Training</a></li>
+              <li><a class="dropdown-item" href="services.html#angelic-reiki">Angelic Reiki</a></li>
+              <li><a class="dropdown-item" href="services.html#crystal-healing">Crystal Healing</a></li>
+              <li><a class="dropdown-item" href="services.html#spiritual-coaching-mentorship">Spiritual Coaching & Mentorship</a></li>
+              <li><a class="dropdown-item" href="services.html#chakra-balance-cleanse">Chakra Balance/Cleanse</a></li>
+              <li><a class="dropdown-item" href="services.html#self-care-mentorship-soul-approach">Self Care Mentorship – The Soul Approach</a></li>
+              <li><a class="dropdown-item" href="services.html#one-one-meditation-relaxation-sessions">1-1 Meditation/Relaxation Sessions</a></li>
+              <li><a class="dropdown-item" href="services.html#violet-flame-healing">Violet Flame Healing</a></li>
+              <li><a class="dropdown-item" href="services.html#intuitive-crystal-healing">Intuitive Crystal Healing</a></li>
+              <li><a class="dropdown-item" href="services.html#event-related-questions">Event-Related Questions</a></li>
             </ul>
           </li>
-
+          
           <!-- About Dropdown -->
           <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdownAbout"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              About
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAbout" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              About Me
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownAbout">
-              <li><a class="dropdown-item" href="about.html#who-we-are">Who We Are</a></li>
-              <li>
-                <a class="dropdown-item" href="about.html#mission"
-                  >Our Mission &amp; Vision</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item" href="about.html#certifications"
-                  >Certifications &amp; Expertise</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item" href="about.html#philosophy"
-                  >My Philosophy</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item" href="about.html#testimonials"
-                  >Testimonials</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item" href="about.html#my-journey"
-                  >My Journey</a
-                >
-              </li>
+              <li><a class="dropdown-item" href="about.html#who-we-are">Who I Am</a></li>
+              <li><a class="dropdown-item" href="about.html#mission">My Mission & Vision</a></li>
+              <li><a class="dropdown-item" href="about.html#certifications">Certifications & Expertise</a></li>
+              <li><a class="dropdown-item" href="about.html#philosophy">My Philosophy</a></li>
+              <li><a class="dropdown-item" href="about.html#testimonials">Testimonials</a></li>
+              <li><a class="dropdown-item" href="about.html#my-journey">My Journey</a></li>
               <li><a class="dropdown-item" href="about.html#cta">Call to Action</a></li>
             </ul>
           </li>
-
+          
           <li class="nav-item">
-            <!-- Moved workshop/training references to events/courses page -->
             <a class="nav-link" href="events.html">Events</a>
           </li>
-
+        
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="contact.html">Contact Me</a>
           </li>
         </ul>
       </div>
@@ -963,14 +855,76 @@
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="footer-section py-4 bg-dark text-white">
-    <div class="container text-center">
-      <p class="mb-0">
-        © 2025 The Sacred Soul Academy. All rights reserved.
-      </p>
+  <footer class="footer-section text-muted pt-5">
+    <div class="container">
+      <div class="row pb-4">
+        <!-- Brand/Intro Column -->
+        <div class="col-md-4 col-lg-3 mb-4">
+          <h5 class="font-playfair">The Sacred Soul Academy</h5>
+          <p class="font-open small">
+            Helping you embrace spiritual transformation through holistic therapies, 
+            intuitive guidance, and mindfulness practices. 
+            Reconnect with your inner essence and discover 
+            balance for mind, body, and soul.
+          </p>
+          <p class="font-open small mb-0">
+            <strong>© <span id="year"></span> The Sacred Soul Academy.</strong><br />
+            All rights reserved.
+          </p>
+        </div>
+
+        <!-- Quick Links Column -->
+        <div class="col-md-4 col-lg-3 mb-4">
+          <h5 class="font-playfair">Quick Links</h5>
+          <ul class="list-unstyled font-open">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">My Services</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+          </ul>
+        </div>
+
+        <!-- Policies & Resources Column -->
+        <div class="col-md-4 col-lg-3 mb-4">
+          <h5 class="font-playfair">Policies & Info</h5>
+          <ul class="list-unstyled font-open">
+            <li><a href="cookie-policy.html">Cookie Policy</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="index.html#disclaimer">Disclaimer</a></li>
+            <!-- Add more if needed -->
+          </ul>
+          <p class="small mt-3">
+            <em>Registered Holistic Therapist</em>
+          </p>
+        </div>
+
+        <!-- Contact & Social Column -->
+        <div class="col-md-12 col-lg-3 mb-4">
+          <h5 class="font-playfair">Contact</h5>
+          <p class="font-open small mb-2"><strong>Email:</strong> 
+            <a href="mailto:thesacredsoul@mail.com">thesacredsoul@mail.com</a>
+          </p>
+          <p class="font-open small mb-2"><strong>Phone/WhatsApp:</strong> +44 7527 966409</p>
+          <p class="font-open small mb-2">
+            <strong>Location:</strong> Remote & In-Person (Appointment Only)
+          </p>
+          
+          <h6 class="mt-4 font-playfair">Follow Me</h6>
+          <div class="d-flex gap-2">
+            <a href="https://www.facebook.com/RainbowAngelicTherapies" target="_blank" 
+               class="footer-social-link" aria-label="Facebook">
+               <i class="bi bi-facebook text-white"></i>
+
+            </a>
+            <!-- Add other social icons as needed -->
+            <!-- e.g., <a href="#" class="footer-social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a> -->
+          </div>
+        </div>
+      </div>
     </div>
   </footer>
+
 
   <!-- Scripts -->
   <!-- jQuery -->
