@@ -1,348 +1,210 @@
 /************************************************************
   EVENTS.CSS - A More Creative, Expanded, Luxury Event Page
 ************************************************************/
-/*------------------------------
-  1. GLOBAL VARIABLES & RESET
-------------------------------*/
+
+/* 1. GLOBAL VARIABLES & RESET */
 :root {
-    --pink: #d291bc;       /* Primary accent color */
-    --pink-dark: #a56ca6;  /* Darker accent for hover states */
-    --text-main: #4a4a4a;
-    --text-muted: #777;
-    --bg-light: #fafafa;
-  }
-  
-  body {
-    font-family: 'Open Sans', sans-serif;
-    color: var(--text-main);
-    margin: 0;
-    background-color: #fdfdfd;
-    overflow-x: hidden;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
-    margin-bottom: 0.75rem;
-    letter-spacing: 0.5px;
-  }
-  
-  /* Utility classes */
-  .text-pink {
-    color: var(--pink) !important;
-  }
-  .fst-italic {
-    font-style: italic;
-  }
-  
-  /*------------------------------
-    2. NAVIGATION
-  ------------------------------*/
-  .navbar-brand {
-    font-family: 'Great Vibes', cursive;
-    font-size: 1.75rem;
-    color: var(--pink);
-    transition: color 0.3s ease;
-  }
-  
-  .navbar-brand:hover {
-    color: var(--pink-dark);
-  }
-  
-  .navbar-nav .nav-link {
-    color: var(--text-main) !important;
-    font-weight: 600;
-    transition: color 0.3s ease;
-  }
-  
-  .navbar-nav .nav-link:hover,
-  .navbar-nav .nav-link.active {
-    color: var(--pink) !important;
-  }
-  
-  /*------------------------------
-    3. PARALLAX HERO
-  ------------------------------*/
-  .events-hero {
-    background-image: url("https://via.placeholder.com/1920x1080?text=Events+Hero+Background");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 70vh;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .hero-overlay {
-    background: rgba(0, 0, 0, 0.45);
-    padding: 3rem 4rem;
-    border-radius: 10px;
-    text-align: center;
-    max-width: 800px;
-  }
+  --pink: #d291bc;        /* Primary accent color */
+  --pink-dark: #a56ca6;   /* Darker accent for hover states */
+  --text-main: #4a4a4a;
+  --text-muted: #777;
+  --bg-light: #fafafa;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--text-main);
+  margin: 0;
+  background-color: #fdfdfd;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.5px;
+}
+
+.text-pink {
+  color: var(--pink) !important;
+}
+
+/* 2. NAVIGATION */
+.navbar-brand {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.75rem;
+  color: var(--pink);
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: var(--pink-dark);
+}
+
+.navbar-nav .nav-link {
+  color: var(--text-main) !important;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: var(--pink) !important;
+}
+
+/* 3. PARALLAX HERO */
+.events-hero {
+  background-image: url("https://via.placeholder.com/1920x1080?text=Events+Hero+Background");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 70vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.45);
+  padding: 3rem 4rem;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 800px;
+}
+
+.events-hero h1 {
+  color: #fff;
+  font-size: 3rem;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+.hero-subtext {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-top: 1rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #f8f8f8;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.scroll-hint .btn-outline-light {
+  border-color: #fff;
+  color: #fff;
+  font-weight: 600;
+  transition: transform 0.3s ease, color 0.3s ease;
+  border-radius: 25px;
+}
+
+.scroll-hint .btn-outline-light:hover {
+  background-color: #fff;
+  color: var(--pink);
+  transform: translateY(-3px);
+}
+
+/* 4. MAIN EVENTS CARDS */
+.events-card {
+  background-color: #fff;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.events-card img {
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.events-card img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+.events-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.07);
+}
+.event-date {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* 5. BUTTONS */
+.btn-pink {
+  background-color: var(--pink);
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.btn-pink:hover {
+  background-color: var(--pink-dark);
+  transform: translateY(-2px);
+}
+
+/* 6. MODALS */
+.modal-content {
+  border-radius: 6px;
+}
+.modal-header {
+  border-bottom: none;
+}
+.modal-footer {
+  border-top: none;
+}
+
+/* 7. FOOTER */
+.events-footer {
+  background-color: #f8f8f8 !important;
+  color: #555 !important;
+  border-top: 1px solid #eee;
+  margin-top: 2rem;
+  padding-top: 2rem !important;
+}
+
+.events-footer a {
+  color: var(--pink) !important;
+  transition: color 0.3s ease;
+}
+.events-footer a:hover {
+  color: var(--pink-dark) !important;
+}
+
+/* 8. RESPONSIVE ADJUSTMENTS */
+@media (max-width: 992px) {
   .events-hero h1 {
-    color: #fff;
-    font-size: 3rem;
-    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+    font-size: 2.5rem;
   }
   .hero-subtext {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-top: 1rem;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    color: #f8f8f8;
-    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+    font-size: 1rem;
+    max-width: 500px;
   }
-  .scroll-hint .btn-outline-light {
-    border-color: #fff;
-    color: #fff;
-    font-weight: 600;
-    transition: transform 0.3s ease, color 0.3s ease;
-    border-radius: 25px;
+}
+
+@media (max-width: 768px) {
+  .events-hero {
+    background-attachment: scroll; /* Disable parallax on mobile */
   }
-  .scroll-hint .btn-outline-light:hover {
-    background-color: #fff;
-    color: var(--pink);
-    transform: translateY(-3px);
+  .events-hero h1 {
+    font-size: 2rem;
   }
-  
-  /*------------------------------
-    4. FEATURED EVENTS CARDS
-  ------------------------------*/
-  #featured-events {
-    min-height: 60vh;
-  }
-  .events-card {
-    background-color: #fff;
-    border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-  }
-  .events-card img {
-    border-radius: 8px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  .events-card img:hover {
-    transform: scale(1.03);
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
-  }
-  .events-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.07);
-  }
-  .event-date {
+  .hero-subtext {
     font-size: 0.9rem;
-    color: #888;
   }
-  
-  /*------------------------------
-    5. MONTHLY TIMELINE
-  ------------------------------*/
-  .monthly-timeline {
-    background-color: var(--bg-light);
-    position: relative;
+}
+
+@media (max-width: 576px) {
+  .events-hero h1 {
+    font-size: 1.75rem;
   }
-  .timeline-wrapper {
-    position: relative;
-  }
-  .timeline-item {
-    position: relative;
-  }
-  .timeline-dot {
-    width: 16px;
-    height: 16px;
-    background-color: var(--pink);
-    border-radius: 50%;
-    position: absolute;
-    left: -35px;
-    top: 10px;
-    z-index: 2;
-  }
-  .timeline-content {
-    border-radius: 8px;
-    background-color: #fff;
-    margin-left: 1.5rem;
-  }
-  .timeline-content h5 {
-    margin-bottom: 0.5rem;
-  }
-  .timeline-content span {
+  .hero-subtext {
     font-size: 0.85rem;
-    color: #777;
   }
-  
-  /* For a vertical line: 
-     If you'd like a connecting line for timeline, you can add:
-     .timeline-wrapper::before {
-       content: "";
-       position: absolute;
-       left: 25px;  // align with dots
-       top: 0;
-       bottom: 0;
-       width: 2px;
-       background: rgba(210, 145, 188, 0.5);
-     }
-  */
-  
-  /*------------------------------
-    6. EVENTBRITE EMBED
-  ------------------------------*/
-  .eventbrite-embed-placeholder {
-    border: 1px solid #ececec;
-    border-radius: 8px;
-    padding: 2rem;
-    background-color: #fff;
-    text-align: center;
-    transition: box-shadow 0.3s ease;
+  .events-card h4 {
+    font-size: 1.2rem;
   }
-  .eventbrite-embed-placeholder:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.07);
-  }
-  .eventbrite-embed-placeholder .embed-placeholder-content {
-    font-style: italic;
-    color: #999;
-  }
-  
-  /*------------------------------
-    7. NEWSLETTER SIGNUP
-  ------------------------------*/
-  .newsletter-signup {
-    background: linear-gradient(to right, #faf5f9 0%, #fdfdfd 100%);
-    border-top: 1px solid #f0eeee;
-    border-bottom: 1px solid #f0eeee;
-  }
-  .newsletter-signup h3 {
-    color: var(--pink);
-    margin-bottom: 1rem;
-  }
-  .newsletter-signup form {
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .newsletter-signup input.form-control {
-    border: 2px solid #e0e0e0;
-    border-radius: 25px;
-    padding: 0.5rem 1rem;
-  }
-  .newsletter-signup input.form-control:focus {
-    border: 2px solid var(--pink);
-    outline: none;
-    box-shadow: 0 0 6px rgba(210, 145, 188, 0.4);
-  }
-  .newsletter-signup .btn-pink {
-    border-radius: 25px;
-    margin-top: 0.5rem;
-    transition: all 0.3s ease;
-  }
-  
-  /*------------------------------
-    8. TESTIMONIALS SECTION
-  ------------------------------*/
-  .blockquote {
-    border-left: 5px solid var(--pink);
-    background-color: #fff;
-    border-radius: 6px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-  }
-  .blockquote p {
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 0.5rem;
-  }
-  .blockquote-footer {
-    color: #999;
-    margin-top: 0.5rem;
-    font-size: 0.9rem;
-  }
-  
-  /*------------------------------
-    9. FOOTER
-  ------------------------------*/
-  .events-footer {
-    background-color: #f8f8f8 !important;
-    color: #555 !important;
-    border-top: 1px solid #eee;
-    margin-top: 2rem;
-    padding-top: 2rem !important;
-  }
-  .events-footer p {
-    margin: 0;
-    font-size: 0.9rem;
-  }
-  .events-footer a {
-    color: var(--pink) !important;
-    transition: color 0.3s ease;
-  }
-  .events-footer a:hover {
-    color: var(--pink-dark) !important;
-  }
-  
-  /*------------------------------
-    10. BUTTONS STYLING
-  ------------------------------*/
-  .btn-pink {
-    background-color: var(--pink);
-    color: #fff;
-    border: none;
-    border-radius: 25px;
-    padding: 0.6rem 1.5rem;
-    font-weight: 600;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-  }
-  .btn-pink:hover {
-    background-color: var(--pink-dark);
-    transform: translateY(-2px);
-  }
-  
-  /*------------------------------
-    11. RESPONSIVE ADJUSTMENTS
-  ------------------------------*/
-  @media (max-width: 992px) {
-    .events-hero h1 {
-      font-size: 2.5rem;
-    }
-    .hero-subtext {
-      font-size: 1rem;
-      max-width: 500px;
-    }
-    .timeline-content {
-      margin-left: 3rem; /* adjust for smaller screens */
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .events-hero {
-      background-attachment: scroll; /* parallax might be disabled on mobile */
-    }
-    .events-hero h1 {
-      font-size: 2rem;
-    }
-    .hero-subtext {
-      font-size: 0.9rem;
-    }
-  }
-  
-  @media (max-width: 576px) {
-    .events-hero h1 {
-      font-size: 1.75rem;
-    }
-    .hero-subtext {
-      font-size: 0.85rem;
-    }
-    .timeline-dot {
-      left: -25px;
-    }
-    .events-card h4 {
-      font-size: 1.2rem;
-    }
-    .newsletter-signup h3 {
-      font-size: 1.3rem;
-    }
-  }
-  
+}
