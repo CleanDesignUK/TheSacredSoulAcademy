@@ -66,12 +66,12 @@ body {
     3. HERO SECTION
   ------------------------------*/
   .saint-david-hero {
-    background-image: url("courses-hero.jpg"); /* Same hero image as other pages */
+    background-image: url("st-david-hero.jpg"); /* Same hero image as other pages */
     background-attachment: scroll;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh;
+    min-height: 80vh;
     position: relative;
     display: flex;
     align-items: center;

@@ -66,12 +66,12 @@ body {
     3. HERO SECTION
   ------------------------------*/
   .magdalene-hero {
-    background-image: url("courses-hero.jpg"); /* Use same hero image as other pages */
+    background-image: url("magdalene-hero.jpg"); /* Use same hero image as other pages */
     background-attachment: scroll;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh;
+    min-height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;

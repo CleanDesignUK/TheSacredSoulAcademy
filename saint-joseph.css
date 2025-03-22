@@ -66,12 +66,12 @@ body {
     3. HERO SECTION
   ------------------------------*/
   .saint-joseph-hero {
-    background-image: url("courses-hero.jpg"); /* Use the same hero image as in your Reiki page */
+    background-image: url("saint-joseph-hero.jpg"); /* Use the same hero image as in your Reiki page */
     background-attachment: scroll;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh;
+    min-height: 80vh;
     position: relative;
     display: flex;
     align-items: center;

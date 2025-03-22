@@ -66,12 +66,12 @@ body {
     3. HERO SECTION
   ------------------------------*/
   .reiki-drum-hero {
-    background-image: url("courses-hero.jpg"); /* Same hero image as other pages */
+    background-image: url("reiki-drum-hero.jpg"); /* Same hero image as other pages */
     background-attachment: scroll;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh;
+    min-height: 80vh;
     position: relative;
     display: flex;
     align-items: center;
@@ -110,9 +110,15 @@ body {
   }
   
   @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
-    40% { transform: translateX(-50%) translateY(-10px); }
-    60% { transform: translateX(-50%) translateY(-5px); }
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateX(-50%) translateY(0);
+    }
+    40% {
+      transform: translateX(-50%) translateY(-10px);
+    }
+    60% {
+      transform: translateX(-50%) translateY(-5px);
+    }
   }
   
   .scroll-down a {
@@ -155,10 +161,34 @@ body {
     box-shadow: 0 12px 20px rgba(0,0,0,0.15);
   }
   
-  /* Custom bullet list styling */
-  .list-bullets {
-    list-style: disc;
-    margin-left: 1.5rem;
+  /* 
+    Impressive styled list 
+    --------------------------------
+  */
+  .impressive-list {
+    list-style: none; /* Remove default bullets */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .impressive-list li {
+    background: #fff;
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+  }
+  
+  .impressive-list li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  }
+  
+  .impressive-list li i {
+    font-size: 1.1rem;
+    vertical-align: middle;
   }
   
   /* Alternating background color */

@@ -66,12 +66,12 @@ h1, h2, h3, h4, h5, h6 {
   3. HERO SECTION
 ------------------------------*/
 .crystal-skull-hero {
-    background-image: url("courses-hero.jpg"); /* Same hero image as other pages */
+    background-image: url("crystal-skull-hero.jpg"); /* Same hero image as other pages */
     background-attachment: scroll;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh;
+    min-height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
