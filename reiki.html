@@ -22,7 +22,7 @@
     property="og:description"
     content="Discover a refined path to holistic wellness through our bespoke Usui Reiki courses. Progress from Level One to Master Teacher and unlock deeper transformative potential at each stage."
   />
-  <!-- Update with a real social image URL -->
+  <!-- Update with a real social image URL if available -->
   <meta
     property="og:image"
     content="https://www.thesacredsoulacademy.com/images/social-courses.jpg"
@@ -65,47 +65,28 @@
     referrerpolicy="no-referrer"
   />
 
-  <!-- Custom Styles (courses.css) -->
+  <!-- Custom Styles (reiki.css) -->
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="courses.css" />
+  <link rel="stylesheet" href="reiki.css" />
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
 </head>
 
 <body style="width: 100%;">
-  <!-- Navigation (Same as your updated navbar with 'Training Courses' dropdown) -->
+  <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light bg-solid fixed-top">
     <div class="container">
       <a class="navbar-brand font-great-vibes" href="index.html">The Sacred Soul Academy</a>
-      <button 
-        class="navbar-toggler" 
-        type="button" 
-        data-bs-toggle="collapse" 
-        data-bs-target="#navbarNav" 
-        aria-controls="navbarNav" 
-        aria-expanded="false" 
-        aria-label="Toggle navigation"
-      >
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav gap-3">
-          <li class="nav-item">
-            <a class="nav-link active" href="index.html">Home</a>
-          </li>
-          
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <!-- Services Dropdown -->
           <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="services.html"
-              id="navbarDropdownServices"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              My Services
-            </a>
+            <a class="nav-link dropdown-toggle" href="services.html" id="navbarDropdownServices" role="button"
+               data-bs-toggle="dropdown" aria-expanded="false">My Services</a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownServices">
               <li><a class="dropdown-item" href="services.html#card-readings">Card Readings</a></li>
               <li><a class="dropdown-item" href="services.html#reiki-drum-treatment">Reiki Drum Treatment</a></li>
@@ -123,19 +104,10 @@
               <li><a class="dropdown-item" href="services.html#event-related-questions">Event-Related Questions</a></li>
             </ul>
           </li>
-
           <!-- About Dropdown -->
           <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdownAbout"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              About Me
-            </a>
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAbout" role="button"
+               data-bs-toggle="dropdown" aria-expanded="false">About Me</a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownAbout">
               <li><a class="dropdown-item" href="about.html#who-we-are">Who I Am</a></li>
               <li><a class="dropdown-item" href="about.html#mission">My Mission & Vision</a></li>
@@ -146,54 +118,43 @@
               <li><a class="dropdown-item" href="about.html#cta">Call to Action</a></li>
             </ul>
           </li>
-
-          <!-- Training Courses Dropdown (Active) -->
+          <!-- Courses/Workshops Dropdown -->
           <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle active"
-              href="courses.html"
-              id="navbarDropdownCourses"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Training Courses
-            </a>
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCourses" role="button"
+               data-bs-toggle="dropdown" aria-expanded="false">Courses/Workshops</a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownCourses">
-              <li><a class="dropdown-item" href="#usui-reiki-level-1">Usui Reiki Level One</a></li>
-              <li><a class="dropdown-item" href="#usui-reiki-level-2">Usui Reiki Level Two</a></li>
-              <li><a class="dropdown-item" href="#usui-reiki-master-level">Usui Reiki Master Level</a></li>
-              <li><a class="dropdown-item" href="#usui-reiki-master-teacher-training">Usui Reiki Master Teacher Training</a></li>
+              <li><a class="dropdown-item active" href="reiki.html">Reiki</a></li>
+              <li><a class="dropdown-item" href="crystal-healing.html">Crystal Healing</a></li>
+              <li><a class="dropdown-item" href="reiki-drum.html">Reiki Drum</a></li>
+              <li><a class="dropdown-item" href="saint-joseph.html">Sacred Empowerment with St. Joseph</a></li>
+              <li><a class="dropdown-item" href="saint-david.html">St. David Healing Empowerment</a></li>
+              <li><a class="dropdown-item" href="chakra.html">Chakra</a></li>
+              <li><a class="dropdown-item" href="magdalene.html">The Seed of Magdalene Activation</a></li>
+              <li><a class="dropdown-item" href="crystal-skull-healing.html">Crystal Skull Healing &amp; Activation</a></li>
             </ul>
           </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="events.html">Events</a>
-          </li>
-          
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact Me</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Me</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Hero Section (Full-screen) -->
+  <!-- Hero Section -->
   <section
     id="hero"
-    class="courses-hero d-flex align-items-center justify-content-center text-center"
+    class="reiki-hero d-flex align-items-center justify-content-center text-center"
   >
     <div class="overlay" style="width:100% !important; height:80vh !important;">
       <div class="d-flex-column justify-content-center align-items-center pt-5 mt-5">
-      <h1 class="display-4 font-great-vibes pt-5 mt-5">Usui Reiki Training</h1>
-      <p class="lead mt-3">
-        A Luxurious Path to Spiritual Alignment & Profound Holistic Healing
-      </p>
-      <a href="#intro" class="btn btn-outline-light btn-lg mt-4">
-        Begin Your Journey
-      </a>
-    </div>
+        <h1 class="display-4 font-great-vibes pt-5 mt-5">Usui Reiki Training</h1>
+        <p class="lead mt-3">
+          A Luxurious Path to Spiritual Alignment & Profound Holistic Healing
+        </p>
+        <a href="#intro" class="btn btn-outline-light btn-lg mt-4">
+          Begin Your Journey
+        </a>
+      </div>
     </div>
     <div class="scroll-down">
       <a href="#intro">
@@ -280,7 +241,7 @@
           </div>
           <div class="col-lg-6">
             <img
-              src="usui-reiki-level-one.jpg"
+              src="usui-reiki-level-1.jpg"
               alt="Usui Reiki Level One"
               class="img-fluid rounded shadow-lg service-image"
             />
@@ -324,7 +285,7 @@
           </div>
           <div class="col-lg-6 order-lg-1">
             <img
-              src="usui-reiki-level-two.jpg"
+              src="usui-reiki-level-2.jpg"
               alt="Usui Reiki Level Two"
               class="img-fluid rounded shadow-lg service-image"
             />
@@ -368,7 +329,7 @@
           </div>
           <div class="col-lg-6">
             <img
-              src="usui-reiki-master-level.jpg"
+              src="usui-reiki-level-3.jpg"
               alt="Usui Reiki Master Level"
               class="img-fluid rounded shadow-lg service-image"
             />
@@ -412,7 +373,7 @@
           </div>
           <div class="col-lg-6 order-lg-1">
             <img
-              src="usui-reiki-master-teacher.jpg"
+              src="usui-reiki-level-4.jpg"
               alt="Usui Reiki Master Teacher Training"
               class="img-fluid rounded shadow-lg service-image"
             />
@@ -430,14 +391,13 @@
           to discuss your goals and ensure you embark on the perfect Reiki journey.
         </p>
         <div class="d-flex justify-content-center align-items-center">
-     <a href="contact.html" class="btn btn-pink mx-auto"> Contact me today </a>
-    </div>
+          <a href="contact.html" class="btn btn-pink mx-auto"> Contact me today </a>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Footer Section (Same structure as before) -->
+  <!-- Footer Section -->
   <footer class="footer-section text-muted pt-5">
     <div class="container">
       <div class="row pb-4">
@@ -524,7 +484,6 @@
 
     $(document).ready(function () {
       // Initialize Owl Carousel if needed
-      // Example:
       // $("#yourCarouselID").owlCarousel({
       //   items: 1,
       //   loop: true,
