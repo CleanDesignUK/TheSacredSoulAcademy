@@ -1,5 +1,5 @@
 /*====================================================
-  crystal-skull.css – Crystal Skull Healing & Activation Workshop Page
+  crystal-skull-healing.css – Crystal Skull Healing & Activation Workshop Page
   Matches the overall style of The Sacred Soul Academy pages.
 ====================================================*/
 
@@ -7,238 +7,262 @@
   1. GLOBAL STYLES
 ------------------------------*/
 body {
-    font-family: 'Open Sans', sans-serif;
-    color: #4a4a4a;
-    line-height: 1.6;
-    background-color: #faf9f7;
-    margin: 0;
-    width: 100%;
-    overflow-x: hidden;
-  }
-  
+  font-family: 'Open Sans', sans-serif;
+  color: #4a4a4a;
+  line-height: 1.6;
+  background-color: #faf9f7;
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
-    margin-bottom: 0.75rem;
-  }
-  
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 0.75rem;
+}
+
 .font-playfair {
-    font-family: 'Playfair Display', serif;
-  }
-  
+  font-family: 'Playfair Display', serif;
+}
+
 .font-great-vibes {
-    font-family: 'Great Vibes', cursive;
-  }
-  
+  font-family: 'Great Vibes', cursive;
+}
+
 .font-open {
-    font-family: 'Open Sans', sans-serif;
-  }
-  
+  font-family: 'Open Sans', sans-serif;
+}
+
 /*------------------------------
-  2. NAVBAR
+2. NAVBAR
 ------------------------------*/
 .navbar {
-    background-color: #fff;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  }
-  
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
 .navbar .navbar-brand {
-    font-size: 1.75rem;
-    color: #d291bc;
-    transition: color 0.3s ease;
-  }
-  
+  font-size: 1.75rem;
+  color: #d291bc;
+  transition: color 0.3s ease;
+}
+
 .navbar .navbar-brand:hover {
-    color: #a56ca6;
-  }
-  
+  color: #a56ca6;
+}
+
 .navbar .nav-link {
-    color: #4a4a4a;
-    font-weight: 600;
-    transition: color 0.3s ease;
-  }
-  
+  color: #4a4a4a;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
 .navbar .nav-link:hover,
 .navbar .nav-link.active {
-    color: #d291bc;
-  }
-  
+  color: #d291bc;
+}
+
 /*------------------------------
-  3. HERO SECTION
+3. HERO SECTION
 ------------------------------*/
 .crystal-skull-hero {
-    background-image: url("crystal-skull-hero.jpg"); /* Same hero image as other pages */
-    background-attachment: scroll;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-  }
-  
+  background-image: url("crystal-skull-hero.jpg"); /* Same hero image as other pages */
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
 .crystal-skull-hero .overlay {
-    background: rgba(0,0,0,0.55);
-    padding: 2rem 3rem;
-    border-radius: 10px;
-    color: #fff;
-  }
-  
+  background: rgba(0,0,0,0.55);
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  color: #fff;
+}
+
 .crystal-skull-hero h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-shadow: 0 4px 8px rgba(0,0,0,0.4);
-    margin-bottom: 1rem;
-    color: white !important;
-  }
-  
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 0 4px 8px rgba(0,0,0,0.4);
+  margin-bottom: 1rem;
+  color: white !important;
+}
+
 .crystal-skull-hero p {
-    font-size: 1.25rem;
-    line-height: 1.6;
-    text-shadow: 0 2px 5px rgba(0,0,0,0.3);
-  }
-  
+  font-size: 1.25rem;
+  line-height: 1.6;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
 .scroll-down {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    animation: bounce 2s infinite;
-  }
-  
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: bounce 2s infinite;
+}
+
 @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
-    40% { transform: translateX(-50%) translateY(-10px); }
-    60% { transform: translateX(-50%) translateY(-5px); }
-  }
-  
+  0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+  40% { transform: translateX(-50%) translateY(-10px); }
+  60% { transform: translateX(-50%) translateY(-5px); }
+}
+
 .scroll-down a {
-    color: #d291bc;
-    transition: color 0.3s ease;
-  }
-  
+  color: #d291bc;
+  transition: color 0.3s ease;
+}
+
 .scroll-down a:hover {
-    color: #a56ca6;
-  }
-  
+  color: #a56ca6;
+}
+
 /*------------------------------
-  4. COURSE SECTIONS
+4. COURSE SECTIONS
 ------------------------------*/
 .course-section {
-    padding: 4rem 0;
-    position: relative;
-  }
-  
+  padding: 4rem 0;
+  position: relative;
+}
+
 .course-section h3 {
-    color: #a56ca6;
-    margin-bottom: 1.5rem;
-    letter-spacing: 0.5px;
-    text-align: center;
-  }
-  
+  color: #a56ca6;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
 .course-section p {
-    color: #4a4a4a;
-    margin-bottom: 1rem;
-    line-height: 1.7;
-  }
-  
-/* Custom bullet list styling */
+  color: #4a4a4a;
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+/* 
+Convert .list-bullets to a pink circle + white check style
+using a single pseudo-element approach
+*/
 .list-bullets {
-    list-style: disc;
-    margin-left: 1.5rem;
-  }
-  
+list-style: none; /* remove default bullets */
+margin: 0;
+padding: 0;
+}
+.list-bullets li {
+position: relative;
+margin-bottom: 1rem; /* space between items */
+padding-left: 2rem;  /* space for bullet icon */
+}
+.list-bullets li::before {
+content: "\2714";           /* heavy check mark (Unicode) */
+position: absolute;
+left: 0;
+top: 0.05rem;
+width: 1.3rem;
+height: 1.3rem;
+background-color: #d291bc;  /* pink circle */
+color: #fff;                /* white check */
+display: inline-block;
+text-align: center;
+line-height: 1.3rem;
+border-radius: 50%;
+font-size: 0.75rem;
+}
+
 /* Alternating background color */
 .bg-alt {
-    background-color: #f9f6f2;
-  }
-  
+  background-color: #f9f6f2;
+}
+
 /*------------------------------
-  5. CTA BUTTONS – Darker Pink
+5. CTA BUTTONS – Darker Pink
 ------------------------------*/
 .btn-dark-pink {
-    background-color: #a56ca6;
-    color: #fff;
-    border: none;
-    border-radius: 25px;
-    padding: 0.6rem 1.5rem;
-    font-weight: 600;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-  }
-  
+  background-color: #a56ca6;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
 .btn-dark-pink:hover {
-    background-color: #8f4c8b;
-    transform: translateY(-2px);
-  }
-  
+  background-color: #8f4c8b;
+  transform: translateY(-2px);
+}
+
 .text-pink {
-    color: #d291bc !important;
-  }
-  
+  color: #d291bc !important;
+}
+
 /*------------------------------
-  6. SCHEDULING SECTION
+6. SCHEDULING SECTION
 ------------------------------*/
 .scheduling-section {
-    background-color: #f9f6f2;
-    padding: 4rem 0;
-  }
-  
+  background-color: #f9f6f2;
+  padding: 4rem 0;
+}
+
 .scheduling-section h2 {
-    color: #a56ca6;
-    margin-bottom: 1rem;
-  }
-  
+  color: #a56ca6;
+  margin-bottom: 1rem;
+}
+
 .scheduling-section p {
-    color: #4a4a4a;
-    margin-bottom: 1.5rem;
-  }
-  
+  color: #4a4a4a;
+  margin-bottom: 1.5rem;
+}
+
 .scheduling-section iframe {
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-  }
-  
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
 /*------------------------------
-  7. FOOTER
+7. FOOTER
 ------------------------------*/
 /* (Same as original styling for consistency) */
-  
+
 /*------------------------------
-  8. RESPONSIVE ADJUSTMENTS
+8. RESPONSIVE ADJUSTMENTS
 ------------------------------*/
 @media (max-width: 992px) {
-    .crystal-skull-hero h1 {
-      font-size: 2.5rem;
-    }
-    .crystal-skull-hero p {
-      font-size: 1rem;
-    }
-    .course-section {
-      padding: 3rem 0;
-    }
+  .crystal-skull-hero h1 {
+    font-size: 2.5rem;
   }
-  
+  .crystal-skull-hero p {
+    font-size: 1rem;
+  }
+  .course-section {
+    padding: 3rem 0;
+  }
+}
+
 @media (max-width: 768px) {
-    .crystal-skull-hero h1 {
-      font-size: 2rem;
-    }
-    .crystal-skull-hero p {
-      font-size: 0.875rem;
-    }
+  .crystal-skull-hero h1 {
+    font-size: 2rem;
   }
-  
+  .crystal-skull-hero p {
+    font-size: 0.875rem;
+  }
+}
+
 @media (max-width: 576px) {
-    .crystal-skull-hero h1 {
-      font-size: 1.8rem;
-    }
-    .crystal-skull-hero p {
-      font-size: 0.85rem;
-    }
-    .scheduling-section iframe {
-      height: 400px;
-    }
+  .crystal-skull-hero h1 {
+    font-size: 1.8rem;
   }
+  .crystal-skull-hero p {
+    font-size: 0.85rem;
+  }
+  .scheduling-section iframe {
+    height: 400px;
+  }
+}

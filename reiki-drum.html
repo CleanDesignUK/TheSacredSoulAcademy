@@ -56,7 +56,7 @@
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-pJQg3aS+GcFv6+GQXk9E8XzAz7FdXJnFsU1E2pphBjv6dQOGM/oAhgKyZyR7q9kg+ENzm6eEowkCjQPUmWtYVg=="
+    integrity="sha512-pJQg3aS+GcFv6+GQxk9E8XzAz7FdXJnFsU1E2pphBjv6dQOGM/oAhgKyZyR7q9kg+ENzm6eEowkCjQPUmWtYVg=="
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
@@ -244,16 +244,28 @@
       </div>
     </section>
 
-    <!-- What You Will Learn & Experience Section (3 rows layout) -->
+    <!-- What You Will Learn & Experience Section (3 columns) -->
     <section class="course-section py-5">
       <div class="container">
         <h3 class="font-playfair mb-4 text-center">
           What You Will Learn &amp; Experience
         </h3>
 
-        <!-- 1st row: first half of bullet points -->
+        <!-- Fully landscape image -->
         <div class="row mb-4">
-          <div class="col-12">
+          <div class="col-12 text-center">
+            <img
+              src="reiki-drum-landscape-2.jpg"
+              alt="What You Will Learn & Experience"
+              class="img-fluid rounded shadow-lg w-100"
+            />
+          </div>
+        </div>
+
+        <!-- Single row, 3 columns for bullet points -->
+        <div class="row">
+          <!-- Column 1 -->
+          <div class="col-md-4 mb-4">
             <ul class="impressive-list font-open ps-0">
               <li>
                 <i class="bi bi-check-circle-fill me-2 text-pink"></i>
@@ -285,6 +297,12 @@
                 Scientific Insights into Drumming &amp; Healing – Exploring
                 research on the therapeutic effects of rhythm.
               </li>
+            </ul>
+          </div>
+
+          <!-- Column 2 -->
+          <div class="col-md-4 mb-4">
+            <ul class="impressive-list font-open ps-0">
               <li>
                 <i class="bi bi-check-circle-fill me-2 text-pink"></i>
                 Reiki Drum Journey – Finding Your Voice – Connecting with your
@@ -305,26 +323,6 @@
                 Manifestation &amp; Distance Healing with Drumming – Harnessing
                 rhythmic intention for transformation.
               </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- 2nd row: image centered -->
-        <div class="row mb-4">
-          <div class="col-12 text-center">
-            <img
-              src="reiki-drum-landscape-2.jpg"
-              alt="What You Will Learn & Experience"
-              class="img-fluid rounded shadow-lg"
-              style="max-width: 80%;"
-            />
-          </div>
-        </div>
-
-        <!-- 3rd row: second half of bullet points -->
-        <div class="row">
-          <div class="col-12">
-            <ul class="impressive-list font-open ps-0">
               <li>
                 <i class="bi bi-check-circle-fill me-2 text-pink"></i>
                 Group Drumming for Collective Healing – Experiencing the power
@@ -335,6 +333,12 @@
                 Reiki Drum Attunement – Receiving a sacred energetic connection
                 to your drum.
               </li>
+            </ul>
+          </div>
+
+          <!-- Column 3 -->
+          <div class="col-md-4">
+            <ul class="impressive-list font-open ps-0">
               <li>
                 <i class="bi bi-check-circle-fill me-2 text-pink"></i>
                 Meeting Your Power Animal – A guided journey to connect with
@@ -362,7 +366,7 @@
               </li>
               <li>
                 <i class="bi bi-check-circle-fill me-2 text-pink"></i>
-                Ethics &amp; Professional Standards for Practitioners –
+                Ethics &amp; Professional Standards for Practitioners – 
                 Understanding your responsibilities as a Reiki Drum healer.
               </li>
               <li>
@@ -399,22 +403,20 @@
   <footer class="footer-section text-muted pt-5">
     <div class="container">
       <div class="row pb-4">
-        <!-- Brand/Intro Column -->
-        <div class="col-md-4 col-lg-3 mb-4">
+        <!-- Column 1: Brand/Intro -->
+        <div class="col-md-6 col-lg-3 mb-4">
           <h5 class="font-playfair">The Sacred Soul Academy</h5>
           <p class="font-open small">
-            Helping you embrace spiritual transformation through holistic
-            therapies, intuitive guidance, and mindfulness practices. Reconnect
-            with your inner essence and discover balance for mind, body, and
-            soul.
+            Helping you embrace spiritual transformation through holistic therapies, intuitive guidance, and mindfulness practices. Reconnect with your inner essence and discover balance for mind, body, and soul.
           </p>
           <p class="font-open small mb-0">
-            <strong>© <span id="year"></span> The Sacred Soul Academy.</strong
-            ><br />All rights reserved.
+            <strong>© <span id="year"></span> The Sacred Soul Academy.</strong><br />All rights reserved.
           </p>
+          <p></p>
+          <p class="small mb-0">Website design by <a href="http://www.cleandesignuk.com" target="_blank" class="text-pink text-decoration-none">Clean Design UK</a></p>
         </div>
-        <!-- Quick Links Column -->
-        <div class="col-md-4 col-lg-3 mb-4">
+        <!-- Column 2: Quick Links -->
+        <div class="col-md-6 col-lg-2 mb-4">
           <h5 class="font-playfair">Quick Links</h5>
           <ul class="list-unstyled font-open">
             <li><a href="index.html">Home</a></li>
@@ -424,8 +426,22 @@
             <li><a href="contact.html">Contact Me</a></li>
           </ul>
         </div>
-        <!-- Policies & Info Column -->
-        <div class="col-md-4 col-lg-3 mb-4">
+        <!-- Column 3: Courses/Workshops -->
+        <div class="col-md-6 col-lg-2 mb-4">
+          <h5 class="font-playfair">Courses/Workshops</h5>
+          <ul class="list-unstyled font-open">
+            <li><a href="reiki.html">Reiki</a></li>
+            <li><a href="crystal-healing.html">Crystal Healing</a></li>
+            <li><a href="reiki-drum.html">Reiki Drum</a></li>
+            <li><a href="saint-joseph.html">Sacred Empowerment with St. Joseph</a></li>
+            <li><a href="saint-david.html">St. David Healing Empowerment</a></li>
+            <li><a href="chakra.html">Chakra</a></li>
+            <li><a href="magdalene.html">The Seed of Magdalene</a></li>
+            <li><a href="crystal-skull-healing.html">Crystal Skull</a></li>
+          </ul>
+        </div>
+        <!-- Column 4: Policies & Info -->
+        <div class="col-md-6 col-lg-2 mb-4">
           <h5 class="font-playfair">Policies &amp; Info</h5>
           <ul class="list-unstyled font-open">
             <li><a href="cookie-policy.html">Cookie Policy</a></li>
@@ -434,12 +450,11 @@
           </ul>
           <p class="small mt-3"><em>Registered Holistic Therapist</em></p>
         </div>
-        <!-- Contact & Social Column -->
+        <!-- Column 5: Contact & Social -->
         <div class="col-md-12 col-lg-3 mb-4">
           <h5 class="font-playfair">Contact</h5>
           <p class="font-open small mb-2">
-            <strong>Email:</strong>
-            <a href="mailto:thesacredsoul@mail.com">thesacredsoul@mail.com</a>
+            <strong>Email:</strong> <a href="mailto:thesacredsoul@mail.com">thesacredsoul@mail.com</a>
           </p>
           <p class="font-open small mb-2">
             <strong>Phone/WhatsApp:</strong> +44 7527 966409
@@ -449,13 +464,9 @@
           </p>
           <h6 class="mt-4 font-playfair">Follow Me</h6>
           <div class="d-flex gap-2">
-            <a
-              href="https://www.facebook.com/RainbowAngelicTherapies"
-              target="_blank"
-              class="footer-social-link"
-              aria-label="Facebook"
-              ><i class="bi bi-facebook text-white"></i
-            ></a>
+            <a href="https://www.facebook.com/RainbowAngelicTherapies" target="_blank" class="footer-social-link" aria-label="Facebook">
+              <i class="bi bi-facebook text-white"></i>
+            </a>
           </div>
         </div>
       </div>

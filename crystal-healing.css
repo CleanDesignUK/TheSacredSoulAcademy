@@ -16,6 +16,12 @@ body {
   width: 100%;
 }
 
+/* Ensure images are fully responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Playfair Display', serif;
   margin-bottom: 0.75rem;
@@ -38,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
 ------------------------------*/
 .navbar {
   background-color: #fff;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 .navbar .navbar-brand {
@@ -66,7 +72,7 @@ h1, h2, h3, h4, h5, h6 {
   3. HERO SECTION
 ------------------------------*/
 .crystal-hero {
-  background-image: url("crystal-healing-hero.jpg"); /* Same hero image from your Reiki page */
+  background-image: url("crystal-healing-hero.jpg");
   background-attachment: scroll;
   background-position: center;
   background-repeat: no-repeat;
@@ -80,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .crystal-hero .overlay {
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(0,0,0,0.55);
   padding: 2rem 3rem;
   border-radius: 10px;
   color: #fff;
@@ -90,7 +96,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 3rem;
   font-weight: 700;
   letter-spacing: 1px;
-  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 4px 8px rgba(0,0,0,0.4);
   margin-bottom: 1rem;
   color: white !important;
 }
@@ -98,13 +104,8 @@ h1, h2, h3, h4, h5, h6 {
 .crystal-hero p {
   font-size: 1.25rem;
   line-height: 1.6;
-  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
-
-/* 
-  If you want the hero button to be an outline style, 
-  define it. But we've switched to .btn-dark-pink for a darker pink.
-*/
 
 /*------------------------------
   4. COURSE SECTIONS
@@ -130,10 +131,41 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .service-image:hover {
   transform: scale(1.03);
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+}
+
+/* Maintains a smaller max width but is overridden on small screens */
+.smaller-image {
+  max-width: 450px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* 
+  The "impressive-list" style 
+  with a pink check icon & subtle box style 
+*/
+.impressive-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.impressive-list li {
+  background: #fff;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.impressive-list li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
 }
 
 /* Alternating background color */
@@ -142,11 +174,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*------------------------------
-  5. CTA BUTTONS
-  Darker shade of pink for all CTAs
+  5. CTA BUTTONS – Darker Pink
 ------------------------------*/
 .btn-dark-pink {
-  background-color: #a56ca6; /* darker pink */
+  background-color: #a56ca6;
   color: #fff;
   border: none;
   border-radius: 25px;
@@ -156,7 +187,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-dark-pink:hover {
-  background-color: #8f4c8b; /* even darker pink on hover */
+  background-color: #8f4c8b;
   transform: translateY(-2px);
 }
 
@@ -185,7 +216,7 @@ h1, h2, h3, h4, h5, h6 {
 .scheduling-section iframe {
   border: none;
   border-radius: 10px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
 }
 
 /*------------------------------
@@ -226,5 +257,14 @@ h1, h2, h3, h4, h5, h6 {
   }
   .scheduling-section iframe {
     height: 400px;
+  }
+  /* Ensure the smaller image can go full-width on small screens */
+  .smaller-image {
+    max-width: 100% !important;
+  }
+  /* Adjust impressive-list items on very small screens */
+  .impressive-list li {
+    padding: 0.75rem;
+    font-size: 0.9rem;
   }
 }

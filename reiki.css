@@ -180,9 +180,34 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #f9f6f2;
 }
 
-/* Icon list styling */
-.course-section ul li {
+/* 
+  Replace the icon-based bullet approach with
+  a single pseudo-element pink circle + white check
+*/
+.list-bullets {
+  list-style: none; /* remove default bullets */
+  margin: 0;
+  padding: 0;
+}
+.list-bullets li {
+  position: relative;
   margin-bottom: 0.5rem;
+  padding-left: 2rem; /* space for bullet icon */
+}
+.list-bullets li::before {
+  content: "\2714";           /* heavy check mark (Unicode) */
+  position: absolute;
+  left: 0;
+  top: 0.05rem;
+  width: 1.3rem;
+  height: 1.3rem;
+  background-color: #d291bc;  /* pink circle */
+  color: #fff;                /* white check */
+  display: inline-block;
+  text-align: center;
+  line-height: 1.3rem;
+  border-radius: 50%;
+  font-size: 0.75rem;
 }
 
 /*------------------------------
