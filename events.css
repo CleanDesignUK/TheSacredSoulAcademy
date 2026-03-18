@@ -276,3 +276,27 @@ h1, h2, h3, h4, h5, h6 {
   display: block !important;   /* override display:flex */
   text-align: center !important;
 }
+
+#roseReikiModal .modal-title,
+#roseReikiModal .modal-body,
+#roseReikiModal .modal-body p,
+#roseReikiModal .modal-checklist,
+#roseReikiModal .modal-checklist p {
+  text-align: center !important;
+}
+
+#roseReikiModal .modal-checklist p {
+  display: block !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#roseReikiModal .modal-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#roseReikiModal .modal-footer {
+  justify-content: center !important;
+}
